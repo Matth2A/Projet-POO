@@ -46,6 +46,8 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::DataGridView^ DataView;
 
 
+
+
 	private:
 		/// <summary>
 		/// Variable nécessaire au concepteur.
@@ -88,7 +90,7 @@ namespace ProjetPOO {
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(558, 722);
+			this->tabControl1->Size = System::Drawing::Size(550, 731);
 			this->tabControl1->SizeMode = System::Windows::Forms::TabSizeMode::Fixed;
 			this->tabControl1->TabIndex = 0;
 			// 
@@ -102,6 +104,7 @@ namespace ProjetPOO {
 			this->tabClient->TabIndex = 0;
 			this->tabClient->Text = L"Client";
 			this->tabClient->UseVisualStyleBackColor = true;
+			this->tabClient->Click += gcnew System::EventHandler(this, &MyForm::tabClient_Click);
 			// 
 			// tabEmployé
 			// 
@@ -113,6 +116,7 @@ namespace ProjetPOO {
 			this->tabEmployé->TabIndex = 1;
 			this->tabEmployé->Text = L"Employé";
 			this->tabEmployé->UseVisualStyleBackColor = true;
+			this->tabEmployé->Click += gcnew System::EventHandler(this, &MyForm::tabEmployé_Click);
 			// 
 			// tabCommand
 			// 
@@ -120,7 +124,7 @@ namespace ProjetPOO {
 			this->tabCommand->Location = System::Drawing::Point(104, 4);
 			this->tabCommand->Name = L"tabCommand";
 			this->tabCommand->Padding = System::Windows::Forms::Padding(3);
-			this->tabCommand->Size = System::Drawing::Size(450, 714);
+			this->tabCommand->Size = System::Drawing::Size(442, 723);
 			this->tabCommand->TabIndex = 2;
 			this->tabCommand->Text = L"Commande";
 			this->tabCommand->UseVisualStyleBackColor = true;
@@ -158,7 +162,7 @@ namespace ProjetPOO {
 			this->DataView->Name = L"DataView";
 			this->DataView->RowHeadersWidth = 62;
 			this->DataView->RowTemplate->Height = 28;
-			this->DataView->Size = System::Drawing::Size(490, 719);
+			this->DataView->Size = System::Drawing::Size(502, 731);
 			this->DataView->TabIndex = 1;
 			// 
 			// MyForm
@@ -185,10 +189,15 @@ namespace ProjetPOO {
 		}
 #pragma endregion
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+
 	}
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void tabStat_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void tabClient_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void tabEmployé_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
