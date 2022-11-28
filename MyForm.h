@@ -158,7 +158,7 @@ namespace ProjetPOO {
 			this->DataView->BackgroundColor = System::Drawing::SystemColors::ActiveCaption;
 			this->DataView->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->DataView->GridColor = System::Drawing::SystemColors::Control;
-			this->DataView->Location = System::Drawing::Point(566, 7);
+			this->DataView->Location = System::Drawing::Point(558, 7);
 			this->DataView->Name = L"DataView";
 			this->DataView->RowHeadersWidth = 62;
 			this->DataView->RowTemplate->Height = 28;
@@ -178,6 +178,7 @@ namespace ProjetPOO {
 			this->Enabled = false;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::Fixed3D;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->MinimumSize = System::Drawing::Size(1094, 796);
 			this->Name = L"MyForm";
 			this->SizeGripStyle = System::Windows::Forms::SizeGripStyle::Show;
 			this->Text = L"MyForm";
@@ -194,6 +195,7 @@ namespace ProjetPOO {
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void tabStat_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->tabStat.
 }
 private: System::Void tabClient_Click(System::Object^ sender, System::EventArgs^ e) {
 }
