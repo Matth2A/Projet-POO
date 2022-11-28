@@ -108,6 +108,9 @@ namespace Project1 {
 			this->tabControl1->Controls->Add(this->tabStocks);
 			this->tabControl1->Controls->Add(this->tabStats);
 			this->tabControl1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->tabControl1->Font = (gcnew System::Drawing::Font(L"Rockwell Extra Bold", 10, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->tabControl1->ItemSize = System::Drawing::Size(100, 80);
 			this->tabControl1->Location = System::Drawing::Point(0, 0);
 			this->tabControl1->Multiline = true;
 			this->tabControl1->Name = L"tabControl1";
@@ -117,53 +120,57 @@ namespace Project1 {
 			// 
 			// tabClient
 			// 
-			this->tabClient->Location = System::Drawing::Point(28, 4);
+			this->tabClient->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->tabClient->Location = System::Drawing::Point(84, 4);
 			this->tabClient->Name = L"tabClient";
 			this->tabClient->Padding = System::Windows::Forms::Padding(3);
-			this->tabClient->Size = System::Drawing::Size(560, 723);
+			this->tabClient->Size = System::Drawing::Size(504, 723);
 			this->tabClient->TabIndex = 0;
 			this->tabClient->Text = L"Client";
 			this->tabClient->UseVisualStyleBackColor = true;
 			// 
 			// tabEmployé
 			// 
-			this->tabEmployé->Location = System::Drawing::Point(28, 4);
+			this->tabEmployé->Location = System::Drawing::Point(84, 4);
 			this->tabEmployé->Name = L"tabEmployé";
 			this->tabEmployé->Padding = System::Windows::Forms::Padding(3);
-			this->tabEmployé->Size = System::Drawing::Size(440, 690);
+			this->tabEmployé->Size = System::Drawing::Size(504, 723);
 			this->tabEmployé->TabIndex = 1;
 			this->tabEmployé->Text = L"Employé";
 			this->tabEmployé->UseVisualStyleBackColor = true;
 			// 
 			// tabCommande
 			// 
-			this->tabCommande->Location = System::Drawing::Point(28, 4);
+			this->tabCommande->Location = System::Drawing::Point(84, 4);
 			this->tabCommande->Name = L"tabCommande";
-			this->tabCommande->Size = System::Drawing::Size(440, 690);
+			this->tabCommande->Size = System::Drawing::Size(504, 723);
 			this->tabCommande->TabIndex = 2;
 			this->tabCommande->Text = L"Commande";
 			this->tabCommande->UseVisualStyleBackColor = true;
 			// 
 			// tabStocks
 			// 
-			this->tabStocks->Location = System::Drawing::Point(28, 4);
+			this->tabStocks->Location = System::Drawing::Point(84, 4);
 			this->tabStocks->Name = L"tabStocks";
-			this->tabStocks->Size = System::Drawing::Size(440, 690);
+			this->tabStocks->Size = System::Drawing::Size(504, 723);
 			this->tabStocks->TabIndex = 3;
 			this->tabStocks->Text = L"Stocks";
 			this->tabStocks->UseVisualStyleBackColor = true;
 			// 
 			// tabStats
 			// 
-			this->tabStats->Location = System::Drawing::Point(28, 4);
+			this->tabStats->Location = System::Drawing::Point(84, 4);
 			this->tabStats->Name = L"tabStats";
-			this->tabStats->Size = System::Drawing::Size(440, 690);
+			this->tabStats->Size = System::Drawing::Size(504, 723);
 			this->tabStats->TabIndex = 4;
 			this->tabStats->Text = L"Statistiques";
 			this->tabStats->UseVisualStyleBackColor = true;
 			// 
 			// dataGridView1
 			// 
+			this->dataGridView1->BackgroundColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(100)));
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->dataGridView1->Location = System::Drawing::Point(0, 0);
@@ -183,6 +190,7 @@ namespace Project1 {
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyForm";
 			this->Text = L"DataBase Manager";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->panel1->ResumeLayout(false);
 			this->panel2->ResumeLayout(false);
 			this->tabControl1->ResumeLayout(false);
@@ -193,5 +201,7 @@ namespace Project1 {
 #pragma endregion
 	private: System::Void panel2_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 	}
+private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
