@@ -47,6 +47,13 @@ namespace Project1 {
 	private: System::Windows::Forms::TabPage^ tabStats;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 
+
+
+
+
+
+
+
 	protected:
 
 
@@ -86,7 +93,7 @@ namespace Project1 {
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Right;
 			this->panel1->Location = System::Drawing::Point(592, 0);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(424, 731);
+			this->panel1->Size = System::Drawing::Size(424, 644);
 			this->panel1->TabIndex = 0;
 			// 
 			// panel2
@@ -95,7 +102,7 @@ namespace Project1 {
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panel2->Location = System::Drawing::Point(0, 0);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(592, 731);
+			this->panel2->Size = System::Drawing::Size(592, 644);
 			this->panel2->TabIndex = 1;
 			this->panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::panel2_Paint);
 			// 
@@ -108,14 +115,14 @@ namespace Project1 {
 			this->tabControl1->Controls->Add(this->tabStocks);
 			this->tabControl1->Controls->Add(this->tabStats);
 			this->tabControl1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->tabControl1->Font = (gcnew System::Drawing::Font(L"Rockwell Extra Bold", 10, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->tabControl1->Font = (gcnew System::Drawing::Font(L"Century Gothic", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->tabControl1->ItemSize = System::Drawing::Size(100, 80);
 			this->tabControl1->Location = System::Drawing::Point(0, 0);
 			this->tabControl1->Multiline = true;
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(592, 731);
+			this->tabControl1->Size = System::Drawing::Size(592, 644);
 			this->tabControl1->TabIndex = 0;
 			// 
 			// tabClient
@@ -135,7 +142,7 @@ namespace Project1 {
 			this->tabEmployé->Location = System::Drawing::Point(84, 4);
 			this->tabEmployé->Name = L"tabEmployé";
 			this->tabEmployé->Padding = System::Windows::Forms::Padding(3);
-			this->tabEmployé->Size = System::Drawing::Size(504, 723);
+			this->tabEmployé->Size = System::Drawing::Size(504, 636);
 			this->tabEmployé->TabIndex = 1;
 			this->tabEmployé->Text = L"Employé";
 			this->tabEmployé->UseVisualStyleBackColor = true;
@@ -144,7 +151,7 @@ namespace Project1 {
 			// 
 			this->tabCommande->Location = System::Drawing::Point(84, 4);
 			this->tabCommande->Name = L"tabCommande";
-			this->tabCommande->Size = System::Drawing::Size(504, 723);
+			this->tabCommande->Size = System::Drawing::Size(794, 723);
 			this->tabCommande->TabIndex = 2;
 			this->tabCommande->Text = L"Commande";
 			this->tabCommande->UseVisualStyleBackColor = true;
@@ -153,7 +160,7 @@ namespace Project1 {
 			// 
 			this->tabStocks->Location = System::Drawing::Point(84, 4);
 			this->tabStocks->Name = L"tabStocks";
-			this->tabStocks->Size = System::Drawing::Size(504, 723);
+			this->tabStocks->Size = System::Drawing::Size(794, 723);
 			this->tabStocks->TabIndex = 3;
 			this->tabStocks->Text = L"Stocks";
 			this->tabStocks->UseVisualStyleBackColor = true;
@@ -162,7 +169,7 @@ namespace Project1 {
 			// 
 			this->tabStats->Location = System::Drawing::Point(84, 4);
 			this->tabStats->Name = L"tabStats";
-			this->tabStats->Size = System::Drawing::Size(504, 723);
+			this->tabStats->Size = System::Drawing::Size(794, 723);
 			this->tabStats->TabIndex = 4;
 			this->tabStats->Text = L"Statistiques";
 			this->tabStats->UseVisualStyleBackColor = true;
@@ -177,17 +184,19 @@ namespace Project1 {
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 62;
 			this->dataGridView1->RowTemplate->Height = 28;
-			this->dataGridView1->Size = System::Drawing::Size(424, 731);
+			this->dataGridView1->Size = System::Drawing::Size(424, 644);
 			this->dataGridView1->TabIndex = 0;
+			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView1_CellContentClick);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1016, 731);
+			this->ClientSize = System::Drawing::Size(1016, 644);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->MinimumSize = System::Drawing::Size(1038, 700);
 			this->Name = L"MyForm";
 			this->Text = L"DataBase Manager";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
@@ -202,6 +211,8 @@ namespace Project1 {
 	private: System::Void panel2_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 	}
 private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 }
 };
 }
