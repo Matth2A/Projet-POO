@@ -100,7 +100,7 @@ namespace ProjetPOO {
 			this->tabClient->Location = System::Drawing::Point(104, 4);
 			this->tabClient->Name = L"tabClient";
 			this->tabClient->Padding = System::Windows::Forms::Padding(3);
-			this->tabClient->Size = System::Drawing::Size(450, 714);
+			this->tabClient->Size = System::Drawing::Size(442, 723);
 			this->tabClient->TabIndex = 0;
 			this->tabClient->Text = L"Client";
 			this->tabClient->UseVisualStyleBackColor = true;
@@ -112,7 +112,7 @@ namespace ProjetPOO {
 			this->tabEmployé->Location = System::Drawing::Point(104, 4);
 			this->tabEmployé->Name = L"tabEmployé";
 			this->tabEmployé->Padding = System::Windows::Forms::Padding(3);
-			this->tabEmployé->Size = System::Drawing::Size(450, 714);
+			this->tabEmployé->Size = System::Drawing::Size(442, 723);
 			this->tabEmployé->TabIndex = 1;
 			this->tabEmployé->Text = L"Employé";
 			this->tabEmployé->UseVisualStyleBackColor = true;
@@ -136,7 +136,7 @@ namespace ProjetPOO {
 			this->tabStock->Location = System::Drawing::Point(104, 4);
 			this->tabStock->Name = L"tabStock";
 			this->tabStock->Padding = System::Windows::Forms::Padding(3);
-			this->tabStock->Size = System::Drawing::Size(450, 714);
+			this->tabStock->Size = System::Drawing::Size(442, 723);
 			this->tabStock->TabIndex = 3;
 			this->tabStock->Text = L"Stock";
 			// 
@@ -147,7 +147,7 @@ namespace ProjetPOO {
 			this->tabStat->Location = System::Drawing::Point(104, 4);
 			this->tabStat->Name = L"tabStat";
 			this->tabStat->Padding = System::Windows::Forms::Padding(3);
-			this->tabStat->Size = System::Drawing::Size(450, 714);
+			this->tabStat->Size = System::Drawing::Size(442, 723);
 			this->tabStat->TabIndex = 4;
 			this->tabStat->Text = L"Stats";
 			this->tabStat->UseVisualStyleBackColor = true;
