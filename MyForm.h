@@ -169,10 +169,10 @@ namespace Project1 {
 			this->tabClient->Controls->Add(this->Clientdetail);
 			this->tabClient->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 8, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->tabClient->Location = System::Drawing::Point(4, 5);
+			this->tabClient->Location = System::Drawing::Point(4, 38);
 			this->tabClient->Name = L"tabClient";
 			this->tabClient->Padding = System::Windows::Forms::Padding(3);
-			this->tabClient->Size = System::Drawing::Size(575, 740);
+			this->tabClient->Size = System::Drawing::Size(575, 707);
 			this->tabClient->TabIndex = 0;
 			this->tabClient->Text = L"Client";
 			// 
@@ -191,10 +191,10 @@ namespace Project1 {
 			// 
 			this->tabEmployé->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(98)), static_cast<System::Int32>(static_cast<System::Byte>(185)),
 				static_cast<System::Int32>(static_cast<System::Byte>(203)));
-			this->tabEmployé->Location = System::Drawing::Point(4, 5);
+			this->tabEmployé->Location = System::Drawing::Point(4, 38);
 			this->tabEmployé->Name = L"tabEmployé";
 			this->tabEmployé->Padding = System::Windows::Forms::Padding(3);
-			this->tabEmployé->Size = System::Drawing::Size(575, 740);
+			this->tabEmployé->Size = System::Drawing::Size(575, 707);
 			this->tabEmployé->TabIndex = 1;
 			this->tabEmployé->Text = L"Employé";
 			// 
@@ -202,9 +202,9 @@ namespace Project1 {
 			// 
 			this->tabCommande->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(98)), static_cast<System::Int32>(static_cast<System::Byte>(185)),
 				static_cast<System::Int32>(static_cast<System::Byte>(203)));
-			this->tabCommande->Location = System::Drawing::Point(4, 5);
+			this->tabCommande->Location = System::Drawing::Point(4, 38);
 			this->tabCommande->Name = L"tabCommande";
-			this->tabCommande->Size = System::Drawing::Size(575, 740);
+			this->tabCommande->Size = System::Drawing::Size(575, 707);
 			this->tabCommande->TabIndex = 2;
 			this->tabCommande->Text = L"Commande";
 			// 
@@ -212,20 +212,19 @@ namespace Project1 {
 			// 
 			this->tabStocks->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(98)), static_cast<System::Int32>(static_cast<System::Byte>(185)),
 				static_cast<System::Int32>(static_cast<System::Byte>(203)));
-			this->tabStocks->Location = System::Drawing::Point(4, 5);
+			this->tabStocks->Location = System::Drawing::Point(4, 38);
 			this->tabStocks->Name = L"tabStocks";
-			this->tabStocks->Size = System::Drawing::Size(575, 740);
+			this->tabStocks->Size = System::Drawing::Size(575, 707);
 			this->tabStocks->TabIndex = 3;
 			this->tabStocks->Text = L"Stocks";
-			this->tabStocks->Click += gcnew System::EventHandler(this, &MyForm::tabStocks_Click);
 			// 
 			// tabStats
 			// 
 			this->tabStats->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(98)), static_cast<System::Int32>(static_cast<System::Byte>(185)),
 				static_cast<System::Int32>(static_cast<System::Byte>(203)));
-			this->tabStats->Location = System::Drawing::Point(4, 5);
+			this->tabStats->Location = System::Drawing::Point(4, 38);
 			this->tabStats->Name = L"tabStats";
-			this->tabStats->Size = System::Drawing::Size(575, 740);
+			this->tabStats->Size = System::Drawing::Size(575, 707);
 			this->tabStats->TabIndex = 4;
 			this->tabStats->Text = L"Statistiques";
 			// 
@@ -318,6 +317,7 @@ namespace Project1 {
 			this->statB->TabIndex = 4;
 			this->statB->Text = L"Statistiques";
 			this->statB->UseVisualStyleBackColor = true;
+			this->statB->Click += gcnew System::EventHandler(this, &MyForm::statB_Click);
 			// 
 			// stocksB
 			// 
@@ -331,6 +331,7 @@ namespace Project1 {
 			this->stocksB->TabIndex = 3;
 			this->stocksB->Text = L"Stocks";
 			this->stocksB->UseVisualStyleBackColor = false;
+			this->stocksB->Click += gcnew System::EventHandler(this, &MyForm::stocksB_Click);
 			// 
 			// commandeB
 			// 
@@ -344,6 +345,7 @@ namespace Project1 {
 			this->commandeB->TabIndex = 2;
 			this->commandeB->Text = L"Commande";
 			this->commandeB->UseVisualStyleBackColor = false;
+			this->commandeB->Click += gcnew System::EventHandler(this, &MyForm::commandeB_Click);
 			// 
 			// personelB
 			// 
@@ -360,6 +362,7 @@ namespace Project1 {
 			this->personelB->TabIndex = 1;
 			this->personelB->Text = L"Personnel";
 			this->personelB->UseVisualStyleBackColor = false;
+			this->personelB->Click += gcnew System::EventHandler(this, &MyForm::personelB_Click);
 			// 
 			// ClientB
 			// 
@@ -373,6 +376,7 @@ namespace Project1 {
 			this->ClientB->TabIndex = 0;
 			this->ClientB->Text = L"Client";
 			this->ClientB->UseVisualStyleBackColor = false;
+			this->ClientB->Click += gcnew System::EventHandler(this, &MyForm::ClientB_Click);
 			// 
 			// panel1
 			// 
@@ -410,12 +414,23 @@ namespace Project1 {
 
 		}
 #pragma endregion
-	private: System::Void panel2_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
-}
-
-private: System::Void tabStocks_Click(System::Object^ sender, System::EventArgs^ e) {
-}
+	//Changement de tab grace au boutons
+	private: System::Void ClientB_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->tabControl->SelectedTab->TabIndex = 0;
+	}
+	private: System::Void personelB_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->tabControl->SelectedTab->TabIndex = 1;
+	}
+	private: System::Void commandeB_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->tabControl->SelectedTab->TabIndex = 2;
+	}
+	private: System::Void stocksB_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->tabControl->SelectedTab->TabIndex = 3;
+	}
+	private: System::Void statB_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->tabControl->SelectedTab->TabIndex = 4;
+	}
 };
 }
