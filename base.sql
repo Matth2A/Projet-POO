@@ -35873,7 +35873,7 @@ CREATE TABLE person(
 	id_p         INT IDENTITY (1,1) NOT NULL ,
 	first_name   VARCHAR (50) NOT NULL ,
 	last_name    VARCHAR (50) NOT NULL ,
-	birth_date   DATETIME NOT NULL ,
+	birth_date   DATE NOT NULL ,
 	id_adr       INT  NOT NULL  ,
 	CONSTRAINT person_PK PRIMARY KEY (id_p)
 );
@@ -35894,8 +35894,8 @@ CREATE TABLE clients(
 ------------------------------------------------------------*/
 CREATE TABLE orders(
 	id_order                 INT IDENTITY (1,1) NOT NULL ,
-	order_issue_date         DATETIME NOT NULL ,
-	expected_delivery_date   DATETIME NOT NULL ,
+	order_issue_date         DATE NOT NULL ,
+	expected_delivery_date   DATE NOT NULL ,
 	discount                 FLOAT  NOT NULL ,
 	id_client                INT  NOT NULL ,
 	id_adr                   INT  NOT NULL ,
@@ -35949,7 +35949,7 @@ CREATE TABLE payment_milestones(
 	id_method   INT  NOT NULL ,
 	id_order    INT  NOT NULL ,
 	amount      FLOAT  NOT NULL ,
-	date        DATETIME NOT NULL  ,
+	date        DATE NOT NULL  ,
 	CONSTRAINT payment_milestones_PK PRIMARY KEY (id_method,id_order)
 );
 
@@ -35959,7 +35959,7 @@ CREATE TABLE payment_milestones(
 ------------------------------------------------------------*/
 CREATE TABLE employees(
 	id_emp             INT IDENTITY (1,1) NOT NULL ,
-	hire_date          DATETIME NOT NULL ,
+	hire_date          DATE NOT NULL ,
 	id_p               INT  NOT NULL ,
 	id_emp_employees   INT  NOT NULL  ,
 	CONSTRAINT employees_PK PRIMARY KEY (id_emp)
