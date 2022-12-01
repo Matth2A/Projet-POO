@@ -35961,7 +35961,7 @@ CREATE TABLE employees(
 	id_emp             INT IDENTITY (1,1) NOT NULL ,
 	hire_date          DATE NOT NULL ,
 	id_p               INT  NOT NULL ,
-	id_emp_employees   INT  NOT NULL  ,
+	id_emp_employees   INT  ,
 	CONSTRAINT employees_PK PRIMARY KEY (id_emp)
 );
 
