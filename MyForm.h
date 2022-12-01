@@ -43,6 +43,10 @@ namespace Project1 {
 	private: System::Windows::Forms::TabPage^ tabStats;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 
+
+
+
+
 	protected:
 
 
