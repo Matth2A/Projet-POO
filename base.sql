@@ -35885,6 +35885,7 @@ CREATE TABLE person(
 CREATE TABLE clients(
 	id_client   INT IDENTITY (1,1) NOT NULL ,
 	id_p        INT  NOT NULL  ,
+	available   bit  NOT NULL ,
 	CONSTRAINT clients_PK PRIMARY KEY (id_client)
 );
 
@@ -35915,6 +35916,7 @@ CREATE TABLE items(
 	restock_threshold    INT  NOT NULL ,
 	taxless_price        FLOAT  NOT NULL ,
 	tax                  FLOAT  NOT NULL  ,
+	available            bit  NOT NULL  ,
 	CONSTRAINT items_PK PRIMARY KEY (id_item)
 );
 
@@ -35962,6 +35964,7 @@ CREATE TABLE employees(
 	hire_date          DATE NOT NULL ,
 	id_p               INT  NOT NULL ,
 	id_emp_employees   INT  ,
+	available          bit  NOT NULL ,
 	CONSTRAINT employees_PK PRIMARY KEY (id_emp)
 );
 
