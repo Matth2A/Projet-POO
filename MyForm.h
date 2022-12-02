@@ -34,28 +34,53 @@ namespace Project1 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::TabControl^ tabControl;
+
 	protected:
+
+
+
+
+
+	private: System::Windows::Forms::DataGridView^ data;
+	private: System::Windows::Forms::TableLayoutPanel^ tableInterface;
+	private: System::Windows::Forms::TableLayoutPanel^ tableFonction;
+
+	private: System::Windows::Forms::TabControl^ TabMod;
 	private: System::Windows::Forms::TabPage^ tabClient;
 	private: System::Windows::Forms::TabPage^ tabEmployé;
 	private: System::Windows::Forms::TabPage^ tabCommande;
 	private: System::Windows::Forms::TabPage^ tabStocks;
 	private: System::Windows::Forms::TabPage^ tabStats;
-	private: System::Windows::Forms::DataGridView^ data;
-	private: System::Windows::Forms::TableLayoutPanel^ tableInterface;
-	private: System::Windows::Forms::TableLayoutPanel^ tableFonction;
-	private: System::Windows::Forms::Panel^ panel1;
-	private: System::Windows::Forms::TableLayoutPanel^ LayoutButton;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::TableLayoutPanel^ Buttons;
 
-	private: System::Windows::Forms::Button^ statB;
-
-	private: System::Windows::Forms::Button^ stocksB;
-
-	private: System::Windows::Forms::Button^ commandeB;
-
-	private: System::Windows::Forms::Button^ personelB;
 	private: System::Windows::Forms::Button^ ClientB;
-	private: System::Windows::Forms::Label^ Clientdetail;
+	private: System::Windows::Forms::Button^ EmplyéB;
+	private: System::Windows::Forms::Button^ CommandeB;
+	private: System::Windows::Forms::Button^ StockB;
+	private: System::Windows::Forms::Button^ StatsB;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -119,114 +144,32 @@ namespace Project1 {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
-			this->tabControl = (gcnew System::Windows::Forms::TabControl());
+			this->data = (gcnew System::Windows::Forms::DataGridView());
+			this->tableInterface = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->tableFonction = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->Buttons = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->ClientB = (gcnew System::Windows::Forms::Button());
+			this->EmplyéB = (gcnew System::Windows::Forms::Button());
+			this->CommandeB = (gcnew System::Windows::Forms::Button());
+			this->StockB = (gcnew System::Windows::Forms::Button());
+			this->StatsB = (gcnew System::Windows::Forms::Button());
+			this->TabMod = (gcnew System::Windows::Forms::TabControl());
 			this->tabClient = (gcnew System::Windows::Forms::TabPage());
-			this->Clientdetail = (gcnew System::Windows::Forms::Label());
 			this->tabEmployé = (gcnew System::Windows::Forms::TabPage());
 			this->tabCommande = (gcnew System::Windows::Forms::TabPage());
 			this->tabStocks = (gcnew System::Windows::Forms::TabPage());
 			this->tabStats = (gcnew System::Windows::Forms::TabPage());
-			this->data = (gcnew System::Windows::Forms::DataGridView());
-			this->tableInterface = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->tableFonction = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->LayoutButton = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->statB = (gcnew System::Windows::Forms::Button());
-			this->stocksB = (gcnew System::Windows::Forms::Button());
-			this->commandeB = (gcnew System::Windows::Forms::Button());
-			this->personelB = (gcnew System::Windows::Forms::Button());
-			this->ClientB = (gcnew System::Windows::Forms::Button());
-			this->panel1 = (gcnew System::Windows::Forms::Panel());
-			this->tabControl->SuspendLayout();
-			this->tabClient->SuspendLayout();
+			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->data))->BeginInit();
 			this->tableInterface->SuspendLayout();
 			this->tableFonction->SuspendLayout();
-			this->LayoutButton->SuspendLayout();
+			this->Buttons->SuspendLayout();
+			this->TabMod->SuspendLayout();
+			this->tableLayoutPanel1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
-			// 
-			// tabControl
-			// 
-			this->tabControl->Appearance = System::Windows::Forms::TabAppearance::Buttons;
-			this->tabControl->Controls->Add(this->tabClient);
-			this->tabControl->Controls->Add(this->tabEmployé);
-			this->tabControl->Controls->Add(this->tabCommande);
-			this->tabControl->Controls->Add(this->tabStocks);
-			this->tabControl->Controls->Add(this->tabStats);
-			this->tabControl->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->tabControl->Font = (gcnew System::Drawing::Font(L"Century Gothic", 11, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->tabControl->Location = System::Drawing::Point(120, 3);
-			this->tabControl->Multiline = true;
-			this->tabControl->Name = L"tabControl";
-			this->tabControl->SelectedIndex = 0;
-			this->tabControl->Size = System::Drawing::Size(583, 749);
-			this->tabControl->TabIndex = 0;
-			// 
-			// tabClient
-			// 
-			this->tabClient->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(98)), static_cast<System::Int32>(static_cast<System::Byte>(185)),
-				static_cast<System::Int32>(static_cast<System::Byte>(203)));
-			this->tabClient->Controls->Add(this->Clientdetail);
-			this->tabClient->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 8, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->tabClient->Location = System::Drawing::Point(4, 38);
-			this->tabClient->Name = L"tabClient";
-			this->tabClient->Padding = System::Windows::Forms::Padding(3);
-			this->tabClient->Size = System::Drawing::Size(575, 707);
-			this->tabClient->TabIndex = 0;
-			this->tabClient->Text = L"Client";
-			// 
-			// Clientdetail
-			// 
-			this->Clientdetail->AutoSize = true;
-			this->Clientdetail->BackColor = System::Drawing::Color::Transparent;
-			this->Clientdetail->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->Clientdetail->Location = System::Drawing::Point(6, 15);
-			this->Clientdetail->Name = L"Clientdetail";
-			this->Clientdetail->Size = System::Drawing::Size(63, 20);
-			this->Clientdetail->TabIndex = 0;
-			this->Clientdetail->Text = L"Client";
-			// 
-			// tabEmployé
-			// 
-			this->tabEmployé->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(98)), static_cast<System::Int32>(static_cast<System::Byte>(185)),
-				static_cast<System::Int32>(static_cast<System::Byte>(203)));
-			this->tabEmployé->Location = System::Drawing::Point(4, 38);
-			this->tabEmployé->Name = L"tabEmployé";
-			this->tabEmployé->Padding = System::Windows::Forms::Padding(3);
-			this->tabEmployé->Size = System::Drawing::Size(575, 707);
-			this->tabEmployé->TabIndex = 1;
-			this->tabEmployé->Text = L"Employé";
-			// 
-			// tabCommande
-			// 
-			this->tabCommande->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(98)), static_cast<System::Int32>(static_cast<System::Byte>(185)),
-				static_cast<System::Int32>(static_cast<System::Byte>(203)));
-			this->tabCommande->Location = System::Drawing::Point(4, 38);
-			this->tabCommande->Name = L"tabCommande";
-			this->tabCommande->Size = System::Drawing::Size(575, 707);
-			this->tabCommande->TabIndex = 2;
-			this->tabCommande->Text = L"Commande";
-			// 
-			// tabStocks
-			// 
-			this->tabStocks->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(98)), static_cast<System::Int32>(static_cast<System::Byte>(185)),
-				static_cast<System::Int32>(static_cast<System::Byte>(203)));
-			this->tabStocks->Location = System::Drawing::Point(4, 38);
-			this->tabStocks->Name = L"tabStocks";
-			this->tabStocks->Size = System::Drawing::Size(575, 707);
-			this->tabStocks->TabIndex = 3;
-			this->tabStocks->Text = L"Stocks";
-			// 
-			// tabStats
-			// 
-			this->tabStats->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(98)), static_cast<System::Int32>(static_cast<System::Byte>(185)),
-				static_cast<System::Int32>(static_cast<System::Byte>(203)));
-			this->tabStats->Location = System::Drawing::Point(4, 38);
-			this->tabStats->Name = L"tabStats";
-			this->tabStats->Size = System::Drawing::Size(575, 707);
-			this->tabStats->TabIndex = 4;
-			this->tabStats->Text = L"Statistiques";
 			// 
 			// data
 			// 
@@ -235,11 +178,12 @@ namespace Project1 {
 			this->data->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->data->ColumnHeadersHeight = 34;
 			this->data->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->data->Location = System::Drawing::Point(709, 3);
+			this->data->Location = System::Drawing::Point(707, 1);
+			this->data->Margin = System::Windows::Forms::Padding(1);
 			this->data->Name = L"data";
 			this->data->RowHeadersWidth = 62;
 			this->data->RowTemplate->Height = 28;
-			this->data->Size = System::Drawing::Size(466, 749);
+			this->data->Size = System::Drawing::Size(470, 847);
 			this->data->TabIndex = 0;
 			// 
 			// tableInterface
@@ -248,7 +192,7 @@ namespace Project1 {
 			this->tableInterface->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				100)));
 			this->tableInterface->Controls->Add(this->tableFonction, 0, 0);
-			this->tableInterface->Controls->Add(this->panel1, 0, 1);
+			this->tableInterface->Controls->Add(this->tableLayoutPanel1, 0, 1);
 			this->tableInterface->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tableInterface->Location = System::Drawing::Point(0, 0);
 			this->tableInterface->Margin = System::Windows::Forms::Padding(0);
@@ -256,7 +200,7 @@ namespace Project1 {
 			this->tableInterface->RowCount = 2;
 			this->tableInterface->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 90)));
 			this->tableInterface->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 10)));
-			this->tableInterface->Size = System::Drawing::Size(1178, 839);
+			this->tableInterface->Size = System::Drawing::Size(1178, 944);
 			this->tableInterface->TabIndex = 1;
 			// 
 			// tableFonction
@@ -268,125 +212,224 @@ namespace Project1 {
 				50)));
 			this->tableFonction->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				40)));
+			this->tableFonction->Controls->Add(this->Buttons, 0, 0);
+			this->tableFonction->Controls->Add(this->TabMod, 1, 0);
 			this->tableFonction->Controls->Add(this->data, 2, 0);
-			this->tableFonction->Controls->Add(this->tabControl, 1, 0);
-			this->tableFonction->Controls->Add(this->LayoutButton, 0, 0);
 			this->tableFonction->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tableFonction->Location = System::Drawing::Point(0, 0);
 			this->tableFonction->Margin = System::Windows::Forms::Padding(0);
 			this->tableFonction->Name = L"tableFonction";
 			this->tableFonction->RowCount = 1;
 			this->tableFonction->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableFonction->Size = System::Drawing::Size(1178, 755);
+			this->tableFonction->Size = System::Drawing::Size(1178, 849);
 			this->tableFonction->TabIndex = 2;
 			// 
-			// LayoutButton
+			// Buttons
 			// 
-			this->LayoutButton->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(190)), static_cast<System::Int32>(static_cast<System::Byte>(233)),
-				static_cast<System::Int32>(static_cast<System::Byte>(231)));
-			this->LayoutButton->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
-			this->LayoutButton->ColumnCount = 1;
-			this->LayoutButton->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->LayoutButton->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-				20)));
-			this->LayoutButton->Controls->Add(this->statB, 0, 4);
-			this->LayoutButton->Controls->Add(this->stocksB, 0, 3);
-			this->LayoutButton->Controls->Add(this->commandeB, 0, 2);
-			this->LayoutButton->Controls->Add(this->personelB, 0, 1);
-			this->LayoutButton->Controls->Add(this->ClientB, 0, 0);
-			this->LayoutButton->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->LayoutButton->Location = System::Drawing::Point(3, 3);
-			this->LayoutButton->Name = L"LayoutButton";
-			this->LayoutButton->RowCount = 5;
-			this->LayoutButton->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
-			this->LayoutButton->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
-			this->LayoutButton->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
-			this->LayoutButton->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
-			this->LayoutButton->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
-			this->LayoutButton->Size = System::Drawing::Size(111, 749);
-			this->LayoutButton->TabIndex = 1;
-			// 
-			// statB
-			// 
-			this->statB->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->statB->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->statB->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->statB->Location = System::Drawing::Point(3, 599);
-			this->statB->Name = L"statB";
-			this->statB->Size = System::Drawing::Size(105, 147);
-			this->statB->TabIndex = 4;
-			this->statB->Text = L"Statistiques";
-			this->statB->UseVisualStyleBackColor = true;
-			this->statB->Click += gcnew System::EventHandler(this, &MyForm::statB_Click);
-			// 
-			// stocksB
-			// 
-			this->stocksB->BackColor = System::Drawing::Color::Transparent;
-			this->stocksB->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->stocksB->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->stocksB->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->stocksB->Location = System::Drawing::Point(3, 450);
-			this->stocksB->Name = L"stocksB";
-			this->stocksB->Size = System::Drawing::Size(105, 143);
-			this->stocksB->TabIndex = 3;
-			this->stocksB->Text = L"Stocks";
-			this->stocksB->UseVisualStyleBackColor = false;
-			this->stocksB->Click += gcnew System::EventHandler(this, &MyForm::stocksB_Click);
-			// 
-			// commandeB
-			// 
-			this->commandeB->BackColor = System::Drawing::Color::Transparent;
-			this->commandeB->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->commandeB->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->commandeB->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->commandeB->Location = System::Drawing::Point(3, 301);
-			this->commandeB->Name = L"commandeB";
-			this->commandeB->Size = System::Drawing::Size(105, 143);
-			this->commandeB->TabIndex = 2;
-			this->commandeB->Text = L"Commande";
-			this->commandeB->UseVisualStyleBackColor = false;
-			this->commandeB->Click += gcnew System::EventHandler(this, &MyForm::commandeB_Click);
-			// 
-			// personelB
-			// 
-			this->personelB->BackColor = System::Drawing::Color::Transparent;
-			this->personelB->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->personelB->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->personelB->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->personelB->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 8, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->personelB->ForeColor = System::Drawing::SystemColors::HighlightText;
-			this->personelB->Location = System::Drawing::Point(3, 152);
-			this->personelB->Name = L"personelB";
-			this->personelB->Size = System::Drawing::Size(105, 143);
-			this->personelB->TabIndex = 1;
-			this->personelB->Text = L"Personnel";
-			this->personelB->UseVisualStyleBackColor = false;
-			this->personelB->Click += gcnew System::EventHandler(this, &MyForm::personelB_Click);
+			this->Buttons->ColumnCount = 1;
+			this->Buttons->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->Buttons->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute, 20)));
+			this->Buttons->Controls->Add(this->ClientB, 0, 0);
+			this->Buttons->Controls->Add(this->EmplyéB, 0, 1);
+			this->Buttons->Controls->Add(this->CommandeB, 0, 2);
+			this->Buttons->Controls->Add(this->StockB, 0, 3);
+			this->Buttons->Controls->Add(this->StatsB, 0, 4);
+			this->Buttons->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->Buttons->Location = System::Drawing::Point(1, 1);
+			this->Buttons->Margin = System::Windows::Forms::Padding(1);
+			this->Buttons->Name = L"Buttons";
+			this->Buttons->RowCount = 5;
+			this->Buttons->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
+			this->Buttons->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
+			this->Buttons->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
+			this->Buttons->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
+			this->Buttons->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
+			this->Buttons->Size = System::Drawing::Size(115, 847);
+			this->Buttons->TabIndex = 2;
 			// 
 			// ClientB
 			// 
-			this->ClientB->BackColor = System::Drawing::Color::Transparent;
-			this->ClientB->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->ClientB->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->ClientB->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->ClientB->Location = System::Drawing::Point(3, 3);
+			this->ClientB->Location = System::Drawing::Point(1, 1);
+			this->ClientB->Margin = System::Windows::Forms::Padding(1);
 			this->ClientB->Name = L"ClientB";
-			this->ClientB->Size = System::Drawing::Size(105, 143);
+			this->ClientB->Size = System::Drawing::Size(113, 167);
 			this->ClientB->TabIndex = 0;
 			this->ClientB->Text = L"Client";
-			this->ClientB->UseVisualStyleBackColor = false;
+			this->ClientB->UseVisualStyleBackColor = true;
 			this->ClientB->Click += gcnew System::EventHandler(this, &MyForm::ClientB_Click);
 			// 
-			// panel1
+			// EmplyéB
 			// 
-			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(95)), static_cast<System::Int32>(static_cast<System::Byte>(172)),
-				static_cast<System::Int32>(static_cast<System::Byte>(211)));
-			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panel1->Location = System::Drawing::Point(3, 758);
-			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(1172, 78);
-			this->panel1->TabIndex = 3;
+			this->EmplyéB->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->EmplyéB->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->EmplyéB->Location = System::Drawing::Point(1, 170);
+			this->EmplyéB->Margin = System::Windows::Forms::Padding(1);
+			this->EmplyéB->Name = L"EmplyéB";
+			this->EmplyéB->Size = System::Drawing::Size(113, 167);
+			this->EmplyéB->TabIndex = 1;
+			this->EmplyéB->Text = L"Personnel";
+			this->EmplyéB->UseVisualStyleBackColor = true;
+			this->EmplyéB->Click += gcnew System::EventHandler(this, &MyForm::EmplyéB_Click);
+			// 
+			// CommandeB
+			// 
+			this->CommandeB->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->CommandeB->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->CommandeB->Location = System::Drawing::Point(1, 339);
+			this->CommandeB->Margin = System::Windows::Forms::Padding(1);
+			this->CommandeB->Name = L"CommandeB";
+			this->CommandeB->Size = System::Drawing::Size(113, 167);
+			this->CommandeB->TabIndex = 2;
+			this->CommandeB->Text = L"Commande";
+			this->CommandeB->UseVisualStyleBackColor = true;
+			this->CommandeB->Click += gcnew System::EventHandler(this, &MyForm::CommandeB_Click);
+			// 
+			// StockB
+			// 
+			this->StockB->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->StockB->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->StockB->Location = System::Drawing::Point(1, 508);
+			this->StockB->Margin = System::Windows::Forms::Padding(1);
+			this->StockB->Name = L"StockB";
+			this->StockB->Size = System::Drawing::Size(113, 167);
+			this->StockB->TabIndex = 3;
+			this->StockB->Text = L"Stocks";
+			this->StockB->UseVisualStyleBackColor = true;
+			this->StockB->Click += gcnew System::EventHandler(this, &MyForm::StockB_Click);
+			// 
+			// StatsB
+			// 
+			this->StatsB->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->StatsB->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->StatsB->Location = System::Drawing::Point(1, 677);
+			this->StatsB->Margin = System::Windows::Forms::Padding(1);
+			this->StatsB->Name = L"StatsB";
+			this->StatsB->Size = System::Drawing::Size(113, 169);
+			this->StatsB->TabIndex = 4;
+			this->StatsB->Text = L"Stats";
+			this->StatsB->UseVisualStyleBackColor = true;
+			this->StatsB->Click += gcnew System::EventHandler(this, &MyForm::StatsB_Click);
+			// 
+			// TabMod
+			// 
+			this->TabMod->Controls->Add(this->tabClient);
+			this->TabMod->Controls->Add(this->tabEmployé);
+			this->TabMod->Controls->Add(this->tabCommande);
+			this->TabMod->Controls->Add(this->tabStocks);
+			this->TabMod->Controls->Add(this->tabStats);
+			this->TabMod->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->TabMod->Font = (gcnew System::Drawing::Font(L"Cooper Black", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->TabMod->ItemSize = System::Drawing::Size(1, 1);
+			this->TabMod->Location = System::Drawing::Point(118, 1);
+			this->TabMod->Margin = System::Windows::Forms::Padding(1);
+			this->TabMod->Multiline = true;
+			this->TabMod->Name = L"TabMod";
+			this->TabMod->SelectedIndex = 0;
+			this->TabMod->Size = System::Drawing::Size(587, 847);
+			this->TabMod->TabIndex = 1;
+			// 
+			// tabClient
+			// 
+			this->tabClient->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(105)), static_cast<System::Int32>(static_cast<System::Byte>(182)),
+				static_cast<System::Int32>(static_cast<System::Byte>(195)));
+			this->tabClient->Location = System::Drawing::Point(4, 5);
+			this->tabClient->Name = L"tabClient";
+			this->tabClient->Padding = System::Windows::Forms::Padding(3);
+			this->tabClient->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
+			this->tabClient->Size = System::Drawing::Size(579, 838);
+			this->tabClient->TabIndex = 0;
+			this->tabClient->Text = L"Client";
+			// 
+			// tabEmployé
+			// 
+			this->tabEmployé->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(105)), static_cast<System::Int32>(static_cast<System::Byte>(182)),
+				static_cast<System::Int32>(static_cast<System::Byte>(195)));
+			this->tabEmployé->Location = System::Drawing::Point(4, 5);
+			this->tabEmployé->Name = L"tabEmployé";
+			this->tabEmployé->Padding = System::Windows::Forms::Padding(3);
+			this->tabEmployé->Size = System::Drawing::Size(579, 838);
+			this->tabEmployé->TabIndex = 1;
+			this->tabEmployé->Text = L"Personnel";
+			// 
+			// tabCommande
+			// 
+			this->tabCommande->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(105)), static_cast<System::Int32>(static_cast<System::Byte>(182)),
+				static_cast<System::Int32>(static_cast<System::Byte>(195)));
+			this->tabCommande->ForeColor = System::Drawing::Color::Black;
+			this->tabCommande->Location = System::Drawing::Point(4, 5);
+			this->tabCommande->Name = L"tabCommande";
+			this->tabCommande->Size = System::Drawing::Size(579, 838);
+			this->tabCommande->TabIndex = 2;
+			this->tabCommande->Text = L"Commande";
+			// 
+			// tabStocks
+			// 
+			this->tabStocks->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(105)), static_cast<System::Int32>(static_cast<System::Byte>(182)),
+				static_cast<System::Int32>(static_cast<System::Byte>(195)));
+			this->tabStocks->Location = System::Drawing::Point(4, 5);
+			this->tabStocks->Name = L"tabStocks";
+			this->tabStocks->Size = System::Drawing::Size(579, 838);
+			this->tabStocks->TabIndex = 3;
+			this->tabStocks->Text = L"Stocks";
+			// 
+			// tabStats
+			// 
+			this->tabStats->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(105)), static_cast<System::Int32>(static_cast<System::Byte>(182)),
+				static_cast<System::Int32>(static_cast<System::Byte>(195)));
+			this->tabStats->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 10, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->tabStats->Location = System::Drawing::Point(4, 5);
+			this->tabStats->Name = L"tabStats";
+			this->tabStats->Size = System::Drawing::Size(579, 838);
+			this->tabStats->TabIndex = 4;
+			this->tabStats->Text = L"Stats";
+			// 
+			// tableLayoutPanel1
+			// 
+			this->tableLayoutPanel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(95)),
+				static_cast<System::Int32>(static_cast<System::Byte>(172)), static_cast<System::Int32>(static_cast<System::Byte>(211)));
+			this->tableLayoutPanel1->ColumnCount = 2;
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				15)));
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				85)));
+			this->tableLayoutPanel1->Controls->Add(this->pictureBox1, 0, 0);
+			this->tableLayoutPanel1->Controls->Add(this->label1, 1, 0);
+			this->tableLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->tableLayoutPanel1->Location = System::Drawing::Point(3, 852);
+			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
+			this->tableLayoutPanel1->RowCount = 1;
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel1->Size = System::Drawing::Size(1172, 89);
+			this->tableLayoutPanel1->TabIndex = 3;
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(3, 3);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(169, 83);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox1->TabIndex = 0;
+			this->pictureBox1->TabStop = false;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->label1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Showcard Gothic", 20, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label1->Location = System::Drawing::Point(178, 0);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(991, 89);
+			this->label1->TabIndex = 1;
+			this->label1->Text = L"Elèc-tonique.inc";
+			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// MyForm
 			// 
@@ -396,41 +439,45 @@ namespace Project1 {
 			this->AutoValidate = System::Windows::Forms::AutoValidate::Disable;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(202)), static_cast<System::Int32>(static_cast<System::Byte>(235)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->ClientSize = System::Drawing::Size(1178, 839);
+			this->ClientSize = System::Drawing::Size(1178, 944);
 			this->Controls->Add(this->tableInterface);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->MinimumSize = System::Drawing::Size(1200, 895);
+			this->MinimumSize = System::Drawing::Size(1200, 1000);
 			this->Name = L"MyForm";
 			this->Text = L"DataBase Manager";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
-			this->tabControl->ResumeLayout(false);
-			this->tabClient->ResumeLayout(false);
-			this->tabClient->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->data))->EndInit();
 			this->tableInterface->ResumeLayout(false);
 			this->tableFonction->ResumeLayout(false);
-			this->LayoutButton->ResumeLayout(false);
+			this->Buttons->ResumeLayout(false);
+			this->TabMod->ResumeLayout(false);
+			this->tableLayoutPanel1->ResumeLayout(false);
+			this->tableLayoutPanel1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+		this->TabMod->SizeMode = TabSizeMode::Fixed;
+		this->TabMod->ItemSize = System::Drawing::Size(0, 1);
+		this->TabMod->Appearance = TabAppearance::Buttons;
 	}
 	//Changement de tab grace au boutons
 	private: System::Void ClientB_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->tabControl->SelectedTab->TabIndex = 0;
+		this->TabMod->SelectedTab = tabClient;
 	}
-	private: System::Void personelB_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->tabControl->SelectedTab->TabIndex = 1;
+	private: System::Void EmplyéB_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->TabMod->SelectedTab = tabEmployé;
 	}
-	private: System::Void commandeB_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->tabControl->SelectedTab->TabIndex = 2;
+	private: System::Void CommandeB_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->TabMod->SelectedTab = tabCommande;
 	}
-	private: System::Void stocksB_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->tabControl->SelectedTab->TabIndex = 3;
+	private: System::Void StockB_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->TabMod->SelectedTab = tabStocks;
 	}
-	private: System::Void statB_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->tabControl->SelectedTab->TabIndex = 4;
+	private: System::Void StatsB_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->TabMod->SelectedTab = tabStats;
 	}
 };
 }
