@@ -53,7 +53,8 @@ namespace Project1 {
 	private: System::Windows::Forms::TabPage^ tabStats;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
-	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ MarqueLabel;
+
 	private: System::Windows::Forms::TableLayoutPanel^ Buttons;
 
 	private: System::Windows::Forms::Button^ ClientB;
@@ -61,6 +62,10 @@ namespace Project1 {
 	private: System::Windows::Forms::Button^ CommandeB;
 	private: System::Windows::Forms::Button^ StockB;
 	private: System::Windows::Forms::Button^ StatsB;
+	private: System::Windows::Forms::TabControl^ StatControl;
+	private: System::Windows::Forms::TabPage^ ModifStat;
+	private: System::Windows::Forms::TabPage^ SupprStat;
+	private: System::Windows::Forms::TabPage^ RechercheStat;
 
 
 
@@ -72,41 +77,84 @@ namespace Project1 {
 
 
 
-	private: System::Windows::Forms::TabControl^ tabControl1;
-	private: System::Windows::Forms::TabPage^ tabPage1;
-	private: System::Windows::Forms::TabPage^ tabPage2;
-	private: System::Windows::Forms::TabPage^ tabPage3;
-	private: System::Windows::Forms::TabPage^ tabPage4;
+
+
+
+
+
+
+
+
+
+
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel2;
-	private: System::Windows::Forms::Label^ NomTab;
+	private: System::Windows::Forms::Label^ StatLabel;
+
+
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel3;
-	private: System::Windows::Forms::TabControl^ tabControl2;
-	private: System::Windows::Forms::TabPage^ tabPage5;
-	private: System::Windows::Forms::TabPage^ tabPage6;
-	private: System::Windows::Forms::TabPage^ tabPage7;
-	private: System::Windows::Forms::TabPage^ tabPage8;
+	private: System::Windows::Forms::TabControl^ StockControl;
+
+	private: System::Windows::Forms::TabPage^ AjoutStock;
+
+	private: System::Windows::Forms::TabPage^ ModifStock;
+
+
+	private: System::Windows::Forms::TabPage^ StockSuppr;
+
+	private: System::Windows::Forms::TabPage^ RechercheStock;
+
 	private: System::Windows::Forms::Label^ labelStocks;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel4;
-	private: System::Windows::Forms::TabControl^ tabControl3;
-	private: System::Windows::Forms::TabPage^ tabPage9;
-	private: System::Windows::Forms::TabPage^ tabPage10;
-	private: System::Windows::Forms::TabPage^ tabPage11;
-	private: System::Windows::Forms::TabPage^ tabPage12;
+	private: System::Windows::Forms::TabControl^ ClientControl;
+
+	private: System::Windows::Forms::TabPage^ ClientAjout;
+	private: System::Windows::Forms::TabPage^ ModifClient;
+	private: System::Windows::Forms::TabPage^ SupprClient;
+	private: System::Windows::Forms::TabPage^ RechercheClient;
+
+
+
+
+
+
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel5;
-	private: System::Windows::Forms::TabControl^ tabControl4;
-	private: System::Windows::Forms::TabPage^ tabPage13;
-	private: System::Windows::Forms::TabPage^ tabPage14;
-	private: System::Windows::Forms::TabPage^ tabPage15;
-	private: System::Windows::Forms::TabPage^ tabPage16;
+private: System::Windows::Forms::TabControl^ PersonnelControl;
+private: System::Windows::Forms::TabPage^ AjoutPersonnel;
+private: System::Windows::Forms::TabPage^ ModifPersonnel;
+private: System::Windows::Forms::TabPage^ SupprPersonnel;
+private: System::Windows::Forms::TabPage^ RecherchePersonnel;
+
+
+
+
+
+
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel6;
-	private: System::Windows::Forms::TabControl^ tabControl5;
-	private: System::Windows::Forms::TabPage^ tabPage17;
-	private: System::Windows::Forms::TabPage^ tabPage18;
-	private: System::Windows::Forms::TabPage^ tabPage19;
-	private: System::Windows::Forms::TabPage^ tabPage20;
+private: System::Windows::Forms::TabControl^ CommandControl;
+private: System::Windows::Forms::TabPage^ AjoutCommande;
+private: System::Windows::Forms::TabPage^ ModifControl;
+private: System::Windows::Forms::TabPage^ SupprControle;
+private: System::Windows::Forms::TabPage^ RechercheControl;
+
+
+
+
+
+
 	private: System::Windows::Forms::Label^ label4;
+private: System::Windows::Forms::TabPage^ StatCiffAffa;
+private: System::Windows::Forms::TableLayoutPanel^ AJoutClientTab;
+
+private: System::Windows::Forms::TextBox^ txtClientAjoutPrénom;
+private: System::Windows::Forms::TextBox^ txtClientAjoutBirthDate;
+private: System::Windows::Forms::Label^ label6;
+private: System::Windows::Forms::Label^ label5;
+private: System::Windows::Forms::TextBox^ txtClientAjoutNom;
+private: System::Windows::Forms::Label^ label1;
+private: System::Windows::Forms::Button^ button1;
+private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel7;
 
 
 
@@ -203,70 +251,81 @@ namespace Project1 {
 			this->StatsB = (gcnew System::Windows::Forms::Button());
 			this->TabMod = (gcnew System::Windows::Forms::TabControl());
 			this->tabClient = (gcnew System::Windows::Forms::TabPage());
+			this->tableLayoutPanel4 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->ClientControl = (gcnew System::Windows::Forms::TabControl());
+			this->ClientAjout = (gcnew System::Windows::Forms::TabPage());
+			this->ModifClient = (gcnew System::Windows::Forms::TabPage());
+			this->SupprClient = (gcnew System::Windows::Forms::TabPage());
+			this->RechercheClient = (gcnew System::Windows::Forms::TabPage());
+			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->tabEmployé = (gcnew System::Windows::Forms::TabPage());
+			this->tableLayoutPanel5 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->PersonnelControl = (gcnew System::Windows::Forms::TabControl());
+			this->AjoutPersonnel = (gcnew System::Windows::Forms::TabPage());
+			this->ModifPersonnel = (gcnew System::Windows::Forms::TabPage());
+			this->SupprPersonnel = (gcnew System::Windows::Forms::TabPage());
+			this->RecherchePersonnel = (gcnew System::Windows::Forms::TabPage());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->tabCommande = (gcnew System::Windows::Forms::TabPage());
+			this->tableLayoutPanel6 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->CommandControl = (gcnew System::Windows::Forms::TabControl());
+			this->AjoutCommande = (gcnew System::Windows::Forms::TabPage());
+			this->ModifControl = (gcnew System::Windows::Forms::TabPage());
+			this->SupprControle = (gcnew System::Windows::Forms::TabPage());
+			this->RechercheControl = (gcnew System::Windows::Forms::TabPage());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->tabStocks = (gcnew System::Windows::Forms::TabPage());
 			this->tableLayoutPanel3 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->tabControl2 = (gcnew System::Windows::Forms::TabControl());
-			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage6 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage7 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage8 = (gcnew System::Windows::Forms::TabPage());
+			this->StockControl = (gcnew System::Windows::Forms::TabControl());
+			this->AjoutStock = (gcnew System::Windows::Forms::TabPage());
+			this->ModifStock = (gcnew System::Windows::Forms::TabPage());
+			this->StockSuppr = (gcnew System::Windows::Forms::TabPage());
+			this->RechercheStock = (gcnew System::Windows::Forms::TabPage());
 			this->labelStocks = (gcnew System::Windows::Forms::Label());
 			this->tabStats = (gcnew System::Windows::Forms::TabPage());
 			this->tableLayoutPanel2 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
-			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
-			this->NomTab = (gcnew System::Windows::Forms::Label());
+			this->StatControl = (gcnew System::Windows::Forms::TabControl());
+			this->StatCiffAffa = (gcnew System::Windows::Forms::TabPage());
+			this->ModifStat = (gcnew System::Windows::Forms::TabPage());
+			this->SupprStat = (gcnew System::Windows::Forms::TabPage());
+			this->RechercheStat = (gcnew System::Windows::Forms::TabPage());
+			this->StatLabel = (gcnew System::Windows::Forms::Label());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->MarqueLabel = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->tableLayoutPanel4 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->tabControl3 = (gcnew System::Windows::Forms::TabControl());
-			this->tabPage9 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage10 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage11 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage12 = (gcnew System::Windows::Forms::TabPage());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->tableLayoutPanel5 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->tabControl4 = (gcnew System::Windows::Forms::TabControl());
-			this->tabPage13 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage14 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage15 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage16 = (gcnew System::Windows::Forms::TabPage());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->tableLayoutPanel6 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->tabControl5 = (gcnew System::Windows::Forms::TabControl());
-			this->tabPage17 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage18 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage19 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage20 = (gcnew System::Windows::Forms::TabPage());
-			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->txtClientAjoutNom = (gcnew System::Windows::Forms::TextBox());
+			this->AJoutClientTab = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->txtClientAjoutBirthDate = (gcnew System::Windows::Forms::TextBox());
+			this->txtClientAjoutPrénom = (gcnew System::Windows::Forms::TextBox());
+			this->tableLayoutPanel7 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->data))->BeginInit();
 			this->tableInterface->SuspendLayout();
 			this->tableFonction->SuspendLayout();
 			this->Buttons->SuspendLayout();
 			this->TabMod->SuspendLayout();
 			this->tabClient->SuspendLayout();
+			this->tableLayoutPanel4->SuspendLayout();
+			this->ClientControl->SuspendLayout();
+			this->ClientAjout->SuspendLayout();
 			this->tabEmployé->SuspendLayout();
+			this->tableLayoutPanel5->SuspendLayout();
+			this->PersonnelControl->SuspendLayout();
 			this->tabCommande->SuspendLayout();
+			this->tableLayoutPanel6->SuspendLayout();
+			this->CommandControl->SuspendLayout();
 			this->tabStocks->SuspendLayout();
 			this->tableLayoutPanel3->SuspendLayout();
-			this->tabControl2->SuspendLayout();
+			this->StockControl->SuspendLayout();
 			this->tabStats->SuspendLayout();
 			this->tableLayoutPanel2->SuspendLayout();
-			this->tabControl1->SuspendLayout();
+			this->StatControl->SuspendLayout();
 			this->tableLayoutPanel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
-			this->tableLayoutPanel4->SuspendLayout();
-			this->tabControl3->SuspendLayout();
-			this->tableLayoutPanel5->SuspendLayout();
-			this->tabControl4->SuspendLayout();
-			this->tableLayoutPanel6->SuspendLayout();
-			this->tabControl5->SuspendLayout();
+			this->AJoutClientTab->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// data
@@ -442,6 +501,91 @@ namespace Project1 {
 			this->tabClient->TabIndex = 0;
 			this->tabClient->Text = L"Client";
 			// 
+			// tableLayoutPanel4
+			// 
+			this->tableLayoutPanel4->ColumnCount = 1;
+			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				100)));
+			this->tableLayoutPanel4->Controls->Add(this->ClientControl, 0, 1);
+			this->tableLayoutPanel4->Controls->Add(this->label2, 0, 0);
+			this->tableLayoutPanel4->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->tableLayoutPanel4->Location = System::Drawing::Point(3, 3);
+			this->tableLayoutPanel4->Name = L"tableLayoutPanel4";
+			this->tableLayoutPanel4->RowCount = 2;
+			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 5)));
+			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 95)));
+			this->tableLayoutPanel4->Size = System::Drawing::Size(573, 832);
+			this->tableLayoutPanel4->TabIndex = 4;
+			// 
+			// ClientControl
+			// 
+			this->ClientControl->Controls->Add(this->ClientAjout);
+			this->ClientControl->Controls->Add(this->ModifClient);
+			this->ClientControl->Controls->Add(this->SupprClient);
+			this->ClientControl->Controls->Add(this->RechercheClient);
+			this->ClientControl->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->ClientControl->Location = System::Drawing::Point(3, 44);
+			this->ClientControl->Name = L"ClientControl";
+			this->ClientControl->SelectedIndex = 0;
+			this->ClientControl->Size = System::Drawing::Size(567, 785);
+			this->ClientControl->TabIndex = 1;
+			// 
+			// ClientAjout
+			// 
+			this->ClientAjout->Controls->Add(this->tableLayoutPanel7);
+			this->ClientAjout->Controls->Add(this->AJoutClientTab);
+			this->ClientAjout->Controls->Add(this->button1);
+			this->ClientAjout->Location = System::Drawing::Point(4, 34);
+			this->ClientAjout->Name = L"ClientAjout";
+			this->ClientAjout->Padding = System::Windows::Forms::Padding(3);
+			this->ClientAjout->Size = System::Drawing::Size(559, 747);
+			this->ClientAjout->TabIndex = 0;
+			this->ClientAjout->Text = L"Ajout";
+			this->ClientAjout->UseVisualStyleBackColor = true;
+			// 
+			// ModifClient
+			// 
+			this->ModifClient->Location = System::Drawing::Point(4, 34);
+			this->ModifClient->Name = L"ModifClient";
+			this->ModifClient->Padding = System::Windows::Forms::Padding(3);
+			this->ModifClient->Size = System::Drawing::Size(559, 747);
+			this->ModifClient->TabIndex = 1;
+			this->ModifClient->Text = L"Modifier";
+			this->ModifClient->UseVisualStyleBackColor = true;
+			// 
+			// SupprClient
+			// 
+			this->SupprClient->Location = System::Drawing::Point(4, 34);
+			this->SupprClient->Name = L"SupprClient";
+			this->SupprClient->Padding = System::Windows::Forms::Padding(3);
+			this->SupprClient->Size = System::Drawing::Size(559, 747);
+			this->SupprClient->TabIndex = 2;
+			this->SupprClient->Text = L"Supprimer";
+			this->SupprClient->UseVisualStyleBackColor = true;
+			// 
+			// RechercheClient
+			// 
+			this->RechercheClient->Location = System::Drawing::Point(4, 34);
+			this->RechercheClient->Name = L"RechercheClient";
+			this->RechercheClient->Padding = System::Windows::Forms::Padding(3);
+			this->RechercheClient->Size = System::Drawing::Size(559, 747);
+			this->RechercheClient->TabIndex = 3;
+			this->RechercheClient->Text = L"Recherche";
+			this->RechercheClient->UseVisualStyleBackColor = true;
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Franklin Gothic Heavy", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label2->Location = System::Drawing::Point(3, 0);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(567, 41);
+			this->label2->TabIndex = 2;
+			this->label2->Text = L"Client";
+			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			// 
 			// tabEmployé
 			// 
 			this->tabEmployé->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(105)), static_cast<System::Int32>(static_cast<System::Byte>(182)),
@@ -454,6 +598,86 @@ namespace Project1 {
 			this->tabEmployé->TabIndex = 1;
 			this->tabEmployé->Text = L"Personnel";
 			// 
+			// tableLayoutPanel5
+			// 
+			this->tableLayoutPanel5->ColumnCount = 1;
+			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				100)));
+			this->tableLayoutPanel5->Controls->Add(this->PersonnelControl, 0, 1);
+			this->tableLayoutPanel5->Controls->Add(this->label3, 0, 0);
+			this->tableLayoutPanel5->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->tableLayoutPanel5->Location = System::Drawing::Point(3, 3);
+			this->tableLayoutPanel5->Name = L"tableLayoutPanel5";
+			this->tableLayoutPanel5->RowCount = 2;
+			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 5)));
+			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 95)));
+			this->tableLayoutPanel5->Size = System::Drawing::Size(573, 832);
+			this->tableLayoutPanel5->TabIndex = 4;
+			// 
+			// PersonnelControl
+			// 
+			this->PersonnelControl->Controls->Add(this->AjoutPersonnel);
+			this->PersonnelControl->Controls->Add(this->ModifPersonnel);
+			this->PersonnelControl->Controls->Add(this->SupprPersonnel);
+			this->PersonnelControl->Controls->Add(this->RecherchePersonnel);
+			this->PersonnelControl->Location = System::Drawing::Point(3, 44);
+			this->PersonnelControl->Name = L"PersonnelControl";
+			this->PersonnelControl->SelectedIndex = 0;
+			this->PersonnelControl->Size = System::Drawing::Size(567, 785);
+			this->PersonnelControl->TabIndex = 1;
+			// 
+			// AjoutPersonnel
+			// 
+			this->AjoutPersonnel->Location = System::Drawing::Point(4, 34);
+			this->AjoutPersonnel->Name = L"AjoutPersonnel";
+			this->AjoutPersonnel->Padding = System::Windows::Forms::Padding(3);
+			this->AjoutPersonnel->Size = System::Drawing::Size(559, 747);
+			this->AjoutPersonnel->TabIndex = 0;
+			this->AjoutPersonnel->Text = L"Ajout";
+			this->AjoutPersonnel->UseVisualStyleBackColor = true;
+			// 
+			// ModifPersonnel
+			// 
+			this->ModifPersonnel->Location = System::Drawing::Point(4, 34);
+			this->ModifPersonnel->Name = L"ModifPersonnel";
+			this->ModifPersonnel->Padding = System::Windows::Forms::Padding(3);
+			this->ModifPersonnel->Size = System::Drawing::Size(559, 747);
+			this->ModifPersonnel->TabIndex = 1;
+			this->ModifPersonnel->Text = L"Modification";
+			this->ModifPersonnel->UseVisualStyleBackColor = true;
+			// 
+			// SupprPersonnel
+			// 
+			this->SupprPersonnel->Location = System::Drawing::Point(4, 34);
+			this->SupprPersonnel->Name = L"SupprPersonnel";
+			this->SupprPersonnel->Padding = System::Windows::Forms::Padding(3);
+			this->SupprPersonnel->Size = System::Drawing::Size(559, 747);
+			this->SupprPersonnel->TabIndex = 2;
+			this->SupprPersonnel->Text = L"Supprimer";
+			this->SupprPersonnel->UseVisualStyleBackColor = true;
+			// 
+			// RecherchePersonnel
+			// 
+			this->RecherchePersonnel->Location = System::Drawing::Point(4, 34);
+			this->RecherchePersonnel->Name = L"RecherchePersonnel";
+			this->RecherchePersonnel->Padding = System::Windows::Forms::Padding(3);
+			this->RecherchePersonnel->Size = System::Drawing::Size(559, 747);
+			this->RecherchePersonnel->TabIndex = 3;
+			this->RecherchePersonnel->Text = L"Recherche";
+			this->RecherchePersonnel->UseVisualStyleBackColor = true;
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Franklin Gothic Heavy", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->Location = System::Drawing::Point(3, 0);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(567, 41);
+			this->label3->TabIndex = 2;
+			this->label3->Text = L"Personnel";
+			// 
 			// tabCommande
 			// 
 			this->tabCommande->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(105)), static_cast<System::Int32>(static_cast<System::Byte>(182)),
@@ -465,6 +689,86 @@ namespace Project1 {
 			this->tabCommande->Size = System::Drawing::Size(579, 838);
 			this->tabCommande->TabIndex = 2;
 			this->tabCommande->Text = L"Commande";
+			// 
+			// tableLayoutPanel6
+			// 
+			this->tableLayoutPanel6->ColumnCount = 1;
+			this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				100)));
+			this->tableLayoutPanel6->Controls->Add(this->CommandControl, 0, 1);
+			this->tableLayoutPanel6->Controls->Add(this->label4, 0, 0);
+			this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->tableLayoutPanel6->Location = System::Drawing::Point(0, 0);
+			this->tableLayoutPanel6->Name = L"tableLayoutPanel6";
+			this->tableLayoutPanel6->RowCount = 2;
+			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 5)));
+			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 95)));
+			this->tableLayoutPanel6->Size = System::Drawing::Size(579, 838);
+			this->tableLayoutPanel6->TabIndex = 4;
+			// 
+			// CommandControl
+			// 
+			this->CommandControl->Controls->Add(this->AjoutCommande);
+			this->CommandControl->Controls->Add(this->ModifControl);
+			this->CommandControl->Controls->Add(this->SupprControle);
+			this->CommandControl->Controls->Add(this->RechercheControl);
+			this->CommandControl->Location = System::Drawing::Point(3, 44);
+			this->CommandControl->Name = L"CommandControl";
+			this->CommandControl->SelectedIndex = 0;
+			this->CommandControl->Size = System::Drawing::Size(573, 791);
+			this->CommandControl->TabIndex = 1;
+			// 
+			// AjoutCommande
+			// 
+			this->AjoutCommande->Location = System::Drawing::Point(4, 34);
+			this->AjoutCommande->Name = L"AjoutCommande";
+			this->AjoutCommande->Padding = System::Windows::Forms::Padding(3);
+			this->AjoutCommande->Size = System::Drawing::Size(565, 753);
+			this->AjoutCommande->TabIndex = 0;
+			this->AjoutCommande->Text = L"Ajout";
+			this->AjoutCommande->UseVisualStyleBackColor = true;
+			// 
+			// ModifControl
+			// 
+			this->ModifControl->Location = System::Drawing::Point(4, 34);
+			this->ModifControl->Name = L"ModifControl";
+			this->ModifControl->Padding = System::Windows::Forms::Padding(3);
+			this->ModifControl->Size = System::Drawing::Size(565, 753);
+			this->ModifControl->TabIndex = 1;
+			this->ModifControl->Text = L"Modification";
+			this->ModifControl->UseVisualStyleBackColor = true;
+			// 
+			// SupprControle
+			// 
+			this->SupprControle->Location = System::Drawing::Point(4, 34);
+			this->SupprControle->Name = L"SupprControle";
+			this->SupprControle->Padding = System::Windows::Forms::Padding(3);
+			this->SupprControle->Size = System::Drawing::Size(565, 753);
+			this->SupprControle->TabIndex = 2;
+			this->SupprControle->Text = L"Supprimer";
+			this->SupprControle->UseVisualStyleBackColor = true;
+			// 
+			// RechercheControl
+			// 
+			this->RechercheControl->Location = System::Drawing::Point(4, 34);
+			this->RechercheControl->Name = L"RechercheControl";
+			this->RechercheControl->Padding = System::Windows::Forms::Padding(3);
+			this->RechercheControl->Size = System::Drawing::Size(565, 753);
+			this->RechercheControl->TabIndex = 3;
+			this->RechercheControl->Text = L"Recherche";
+			this->RechercheControl->UseVisualStyleBackColor = true;
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Franklin Gothic Heavy", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label4->Location = System::Drawing::Point(3, 0);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(573, 41);
+			this->label4->TabIndex = 2;
+			this->label4->Text = L"Commande";
 			// 
 			// tabStocks
 			// 
@@ -482,7 +786,7 @@ namespace Project1 {
 			this->tableLayoutPanel3->ColumnCount = 1;
 			this->tableLayoutPanel3->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				100)));
-			this->tableLayoutPanel3->Controls->Add(this->tabControl2, 0, 1);
+			this->tableLayoutPanel3->Controls->Add(this->StockControl, 0, 1);
 			this->tableLayoutPanel3->Controls->Add(this->labelStocks, 0, 0);
 			this->tableLayoutPanel3->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tableLayoutPanel3->Location = System::Drawing::Point(0, 0);
@@ -493,57 +797,57 @@ namespace Project1 {
 			this->tableLayoutPanel3->Size = System::Drawing::Size(579, 838);
 			this->tableLayoutPanel3->TabIndex = 3;
 			// 
-			// tabControl2
+			// StockControl
 			// 
-			this->tabControl2->Controls->Add(this->tabPage5);
-			this->tabControl2->Controls->Add(this->tabPage6);
-			this->tabControl2->Controls->Add(this->tabPage7);
-			this->tabControl2->Controls->Add(this->tabPage8);
-			this->tabControl2->Location = System::Drawing::Point(3, 44);
-			this->tabControl2->Name = L"tabControl2";
-			this->tabControl2->SelectedIndex = 0;
-			this->tabControl2->Size = System::Drawing::Size(573, 791);
-			this->tabControl2->TabIndex = 1;
+			this->StockControl->Controls->Add(this->AjoutStock);
+			this->StockControl->Controls->Add(this->ModifStock);
+			this->StockControl->Controls->Add(this->StockSuppr);
+			this->StockControl->Controls->Add(this->RechercheStock);
+			this->StockControl->Location = System::Drawing::Point(3, 44);
+			this->StockControl->Name = L"StockControl";
+			this->StockControl->SelectedIndex = 0;
+			this->StockControl->Size = System::Drawing::Size(573, 791);
+			this->StockControl->TabIndex = 1;
 			// 
-			// tabPage5
+			// AjoutStock
 			// 
-			this->tabPage5->Location = System::Drawing::Point(4, 34);
-			this->tabPage5->Name = L"tabPage5";
-			this->tabPage5->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage5->Size = System::Drawing::Size(565, 753);
-			this->tabPage5->TabIndex = 0;
-			this->tabPage5->Text = L"Ajout";
-			this->tabPage5->UseVisualStyleBackColor = true;
+			this->AjoutStock->Location = System::Drawing::Point(4, 34);
+			this->AjoutStock->Name = L"AjoutStock";
+			this->AjoutStock->Padding = System::Windows::Forms::Padding(3);
+			this->AjoutStock->Size = System::Drawing::Size(565, 753);
+			this->AjoutStock->TabIndex = 0;
+			this->AjoutStock->Text = L"Ajout";
+			this->AjoutStock->UseVisualStyleBackColor = true;
 			// 
-			// tabPage6
+			// ModifStock
 			// 
-			this->tabPage6->Location = System::Drawing::Point(4, 34);
-			this->tabPage6->Name = L"tabPage6";
-			this->tabPage6->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage6->Size = System::Drawing::Size(565, 753);
-			this->tabPage6->TabIndex = 1;
-			this->tabPage6->Text = L"Modification";
-			this->tabPage6->UseVisualStyleBackColor = true;
+			this->ModifStock->Location = System::Drawing::Point(4, 34);
+			this->ModifStock->Name = L"ModifStock";
+			this->ModifStock->Padding = System::Windows::Forms::Padding(3);
+			this->ModifStock->Size = System::Drawing::Size(565, 753);
+			this->ModifStock->TabIndex = 1;
+			this->ModifStock->Text = L"Modification";
+			this->ModifStock->UseVisualStyleBackColor = true;
 			// 
-			// tabPage7
+			// StockSuppr
 			// 
-			this->tabPage7->Location = System::Drawing::Point(4, 34);
-			this->tabPage7->Name = L"tabPage7";
-			this->tabPage7->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage7->Size = System::Drawing::Size(565, 753);
-			this->tabPage7->TabIndex = 2;
-			this->tabPage7->Text = L"Supprimer";
-			this->tabPage7->UseVisualStyleBackColor = true;
+			this->StockSuppr->Location = System::Drawing::Point(4, 34);
+			this->StockSuppr->Name = L"StockSuppr";
+			this->StockSuppr->Padding = System::Windows::Forms::Padding(3);
+			this->StockSuppr->Size = System::Drawing::Size(565, 753);
+			this->StockSuppr->TabIndex = 2;
+			this->StockSuppr->Text = L"Supprimer";
+			this->StockSuppr->UseVisualStyleBackColor = true;
 			// 
-			// tabPage8
+			// RechercheStock
 			// 
-			this->tabPage8->Location = System::Drawing::Point(4, 34);
-			this->tabPage8->Name = L"tabPage8";
-			this->tabPage8->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage8->Size = System::Drawing::Size(565, 753);
-			this->tabPage8->TabIndex = 3;
-			this->tabPage8->Text = L"Recherche";
-			this->tabPage8->UseVisualStyleBackColor = true;
+			this->RechercheStock->Location = System::Drawing::Point(4, 34);
+			this->RechercheStock->Name = L"RechercheStock";
+			this->RechercheStock->Padding = System::Windows::Forms::Padding(3);
+			this->RechercheStock->Size = System::Drawing::Size(565, 753);
+			this->RechercheStock->TabIndex = 3;
+			this->RechercheStock->Text = L"Recherche";
+			this->RechercheStock->UseVisualStyleBackColor = true;
 			// 
 			// labelStocks
 			// 
@@ -575,8 +879,8 @@ namespace Project1 {
 			this->tableLayoutPanel2->ColumnCount = 1;
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				100)));
-			this->tableLayoutPanel2->Controls->Add(this->tabControl1, 0, 1);
-			this->tableLayoutPanel2->Controls->Add(this->NomTab, 0, 0);
+			this->tableLayoutPanel2->Controls->Add(this->StatControl, 0, 1);
+			this->tableLayoutPanel2->Controls->Add(this->StatLabel, 0, 0);
 			this->tableLayoutPanel2->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tableLayoutPanel2->Location = System::Drawing::Point(0, 0);
 			this->tableLayoutPanel2->Name = L"tableLayoutPanel2";
@@ -586,70 +890,70 @@ namespace Project1 {
 			this->tableLayoutPanel2->Size = System::Drawing::Size(579, 838);
 			this->tableLayoutPanel2->TabIndex = 2;
 			// 
-			// tabControl1
+			// StatControl
 			// 
-			this->tabControl1->Controls->Add(this->tabPage1);
-			this->tabControl1->Controls->Add(this->tabPage2);
-			this->tabControl1->Controls->Add(this->tabPage3);
-			this->tabControl1->Controls->Add(this->tabPage4);
-			this->tabControl1->Font = (gcnew System::Drawing::Font(L"Cooper Black", 11));
-			this->tabControl1->Location = System::Drawing::Point(3, 44);
-			this->tabControl1->Name = L"tabControl1";
-			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(573, 791);
-			this->tabControl1->TabIndex = 1;
+			this->StatControl->Controls->Add(this->StatCiffAffa);
+			this->StatControl->Controls->Add(this->ModifStat);
+			this->StatControl->Controls->Add(this->SupprStat);
+			this->StatControl->Controls->Add(this->RechercheStat);
+			this->StatControl->Font = (gcnew System::Drawing::Font(L"Cooper Black", 11));
+			this->StatControl->Location = System::Drawing::Point(3, 44);
+			this->StatControl->Name = L"StatControl";
+			this->StatControl->SelectedIndex = 0;
+			this->StatControl->Size = System::Drawing::Size(573, 791);
+			this->StatControl->TabIndex = 1;
 			// 
-			// tabPage1
+			// StatCiffAffa
 			// 
-			this->tabPage1->Location = System::Drawing::Point(4, 34);
-			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(565, 753);
-			this->tabPage1->TabIndex = 0;
-			this->tabPage1->Text = L"Ajout";
-			this->tabPage1->UseVisualStyleBackColor = true;
+			this->StatCiffAffa->Location = System::Drawing::Point(4, 34);
+			this->StatCiffAffa->Name = L"StatCiffAffa";
+			this->StatCiffAffa->Padding = System::Windows::Forms::Padding(3);
+			this->StatCiffAffa->Size = System::Drawing::Size(565, 753);
+			this->StatCiffAffa->TabIndex = 0;
+			this->StatCiffAffa->Text = L"Chiffre d\'affaire";
+			this->StatCiffAffa->UseVisualStyleBackColor = true;
 			// 
-			// tabPage2
+			// ModifStat
 			// 
-			this->tabPage2->Location = System::Drawing::Point(4, 34);
-			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage2->Size = System::Drawing::Size(565, 753);
-			this->tabPage2->TabIndex = 1;
-			this->tabPage2->Text = L"Modification";
-			this->tabPage2->UseVisualStyleBackColor = true;
+			this->ModifStat->Location = System::Drawing::Point(4, 34);
+			this->ModifStat->Name = L"ModifStat";
+			this->ModifStat->Padding = System::Windows::Forms::Padding(3);
+			this->ModifStat->Size = System::Drawing::Size(565, 753);
+			this->ModifStat->TabIndex = 1;
+			this->ModifStat->Text = L"Modification";
+			this->ModifStat->UseVisualStyleBackColor = true;
 			// 
-			// tabPage3
+			// SupprStat
 			// 
-			this->tabPage3->Location = System::Drawing::Point(4, 34);
-			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage3->Size = System::Drawing::Size(565, 753);
-			this->tabPage3->TabIndex = 2;
-			this->tabPage3->Text = L"Supprimer";
-			this->tabPage3->UseVisualStyleBackColor = true;
+			this->SupprStat->Location = System::Drawing::Point(4, 34);
+			this->SupprStat->Name = L"SupprStat";
+			this->SupprStat->Padding = System::Windows::Forms::Padding(3);
+			this->SupprStat->Size = System::Drawing::Size(565, 753);
+			this->SupprStat->TabIndex = 2;
+			this->SupprStat->Text = L"Suppr";
+			this->SupprStat->UseVisualStyleBackColor = true;
 			// 
-			// tabPage4
+			// RechercheStat
 			// 
-			this->tabPage4->Location = System::Drawing::Point(4, 34);
-			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage4->Size = System::Drawing::Size(565, 753);
-			this->tabPage4->TabIndex = 3;
-			this->tabPage4->Text = L"Recherche";
-			this->tabPage4->UseVisualStyleBackColor = true;
+			this->RechercheStat->Location = System::Drawing::Point(4, 34);
+			this->RechercheStat->Name = L"RechercheStat";
+			this->RechercheStat->Padding = System::Windows::Forms::Padding(3);
+			this->RechercheStat->Size = System::Drawing::Size(565, 753);
+			this->RechercheStat->TabIndex = 3;
+			this->RechercheStat->Text = L"Recherche";
+			this->RechercheStat->UseVisualStyleBackColor = true;
 			// 
-			// NomTab
+			// StatLabel
 			// 
-			this->NomTab->AutoSize = true;
-			this->NomTab->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->NomTab->Font = (gcnew System::Drawing::Font(L"Franklin Gothic Heavy", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->StatLabel->AutoSize = true;
+			this->StatLabel->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->StatLabel->Font = (gcnew System::Drawing::Font(L"Franklin Gothic Heavy", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->NomTab->Location = System::Drawing::Point(3, 0);
-			this->NomTab->Name = L"NomTab";
-			this->NomTab->Size = System::Drawing::Size(573, 41);
-			this->NomTab->TabIndex = 2;
-			this->NomTab->Text = L"Statistiques";
+			this->StatLabel->Location = System::Drawing::Point(3, 0);
+			this->StatLabel->Name = L"StatLabel";
+			this->StatLabel->Size = System::Drawing::Size(573, 41);
+			this->StatLabel->TabIndex = 2;
+			this->StatLabel->Text = L"Statistiques";
 			// 
 			// tableLayoutPanel1
 			// 
@@ -661,7 +965,7 @@ namespace Project1 {
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				85)));
 			this->tableLayoutPanel1->Controls->Add(this->pictureBox1, 0, 0);
-			this->tableLayoutPanel1->Controls->Add(this->label1, 1, 0);
+			this->tableLayoutPanel1->Controls->Add(this->MarqueLabel, 1, 0);
 			this->tableLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tableLayoutPanel1->Location = System::Drawing::Point(3, 852);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
@@ -681,260 +985,124 @@ namespace Project1 {
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
 			// 
+			// MarqueLabel
+			// 
+			this->MarqueLabel->AutoSize = true;
+			this->MarqueLabel->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->MarqueLabel->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->MarqueLabel->Font = (gcnew System::Drawing::Font(L"Showcard Gothic", 20, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->MarqueLabel->Location = System::Drawing::Point(178, 0);
+			this->MarqueLabel->Name = L"MarqueLabel";
+			this->MarqueLabel->Size = System::Drawing::Size(991, 89);
+			this->MarqueLabel->TabIndex = 1;
+			this->MarqueLabel->Text = L"Elèc-tonique.inc";
+			this->MarqueLabel->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->label1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Showcard Gothic", 20, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(178, 0);
+			this->label1->Location = System::Drawing::Point(3, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(991, 89);
-			this->label1->TabIndex = 1;
-			this->label1->Text = L"Elèc-tonique.inc";
-			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->label1->Size = System::Drawing::Size(181, 50);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"Nom";
+			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// tableLayoutPanel4
+			// button1
 			// 
-			this->tableLayoutPanel4->ColumnCount = 1;
-			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				100)));
-			this->tableLayoutPanel4->Controls->Add(this->tabControl3, 0, 1);
-			this->tableLayoutPanel4->Controls->Add(this->label2, 0, 0);
-			this->tableLayoutPanel4->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->tableLayoutPanel4->Location = System::Drawing::Point(3, 3);
-			this->tableLayoutPanel4->Name = L"tableLayoutPanel4";
-			this->tableLayoutPanel4->RowCount = 2;
-			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 5)));
-			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 95)));
-			this->tableLayoutPanel4->Size = System::Drawing::Size(573, 832);
-			this->tableLayoutPanel4->TabIndex = 4;
+			this->button1->Location = System::Drawing::Point(372, 280);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 1;
+			this->button1->Text = L"button1";
+			this->button1->UseVisualStyleBackColor = true;
 			// 
-			// tabControl3
+			// txtClientAjoutNom
 			// 
-			this->tabControl3->Controls->Add(this->tabPage9);
-			this->tabControl3->Controls->Add(this->tabPage10);
-			this->tabControl3->Controls->Add(this->tabPage11);
-			this->tabControl3->Controls->Add(this->tabPage12);
-			this->tabControl3->Location = System::Drawing::Point(3, 44);
-			this->tabControl3->Name = L"tabControl3";
-			this->tabControl3->SelectedIndex = 0;
-			this->tabControl3->Size = System::Drawing::Size(567, 785);
-			this->tabControl3->TabIndex = 1;
+			this->txtClientAjoutNom->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->txtClientAjoutNom->Location = System::Drawing::Point(3, 53);
+			this->txtClientAjoutNom->Name = L"txtClientAjoutNom";
+			this->txtClientAjoutNom->Size = System::Drawing::Size(181, 33);
+			this->txtClientAjoutNom->TabIndex = 2;
 			// 
-			// tabPage9
+			// AJoutClientTab
 			// 
-			this->tabPage9->Location = System::Drawing::Point(4, 34);
-			this->tabPage9->Name = L"tabPage9";
-			this->tabPage9->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage9->Size = System::Drawing::Size(559, 747);
-			this->tabPage9->TabIndex = 0;
-			this->tabPage9->Text = L"Ajout";
-			this->tabPage9->UseVisualStyleBackColor = true;
+			this->AJoutClientTab->ColumnCount = 3;
+			this->AJoutClientTab->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				33.33333F)));
+			this->AJoutClientTab->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				33.33333F)));
+			this->AJoutClientTab->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				33.33333F)));
+			this->AJoutClientTab->Controls->Add(this->txtClientAjoutPrénom, 1, 1);
+			this->AJoutClientTab->Controls->Add(this->txtClientAjoutBirthDate, 0, 1);
+			this->AJoutClientTab->Controls->Add(this->label6, 1, 0);
+			this->AJoutClientTab->Controls->Add(this->label5, 0, 0);
+			this->AJoutClientTab->Controls->Add(this->txtClientAjoutNom, 2, 1);
+			this->AJoutClientTab->Controls->Add(this->label1, 2, 0);
+			this->AJoutClientTab->Location = System::Drawing::Point(0, 173);
+			this->AJoutClientTab->Name = L"AJoutClientTab";
+			this->AJoutClientTab->RowCount = 2;
+			this->AJoutClientTab->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
+			this->AJoutClientTab->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
+			this->AJoutClientTab->Size = System::Drawing::Size(559, 100);
+			this->AJoutClientTab->TabIndex = 3;
 			// 
-			// tabPage10
+			// label5
 			// 
-			this->tabPage10->Location = System::Drawing::Point(4, 34);
-			this->tabPage10->Name = L"tabPage10";
-			this->tabPage10->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage10->Size = System::Drawing::Size(565, 753);
-			this->tabPage10->TabIndex = 1;
-			this->tabPage10->Text = L"Modification";
-			this->tabPage10->UseVisualStyleBackColor = true;
+			this->label5->AllowDrop = true;
+			this->label5->AutoSize = true;
+			this->label5->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->label5->Location = System::Drawing::Point(376, 0);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(180, 50);
+			this->label5->TabIndex = 3;
+			this->label5->Text = L"Date de Naissance";
+			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// tabPage11
+			// label6
 			// 
-			this->tabPage11->Location = System::Drawing::Point(4, 34);
-			this->tabPage11->Name = L"tabPage11";
-			this->tabPage11->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage11->Size = System::Drawing::Size(565, 753);
-			this->tabPage11->TabIndex = 2;
-			this->tabPage11->Text = L"Supprimer";
-			this->tabPage11->UseVisualStyleBackColor = true;
+			this->label6->AutoSize = true;
+			this->label6->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->label6->Location = System::Drawing::Point(190, 0);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(180, 50);
+			this->label6->TabIndex = 4;
+			this->label6->Text = L"Prénom";
+			this->label6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// tabPage12
+			// txtClientAjoutBirthDate
 			// 
-			this->tabPage12->Location = System::Drawing::Point(4, 34);
-			this->tabPage12->Name = L"tabPage12";
-			this->tabPage12->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage12->Size = System::Drawing::Size(565, 753);
-			this->tabPage12->TabIndex = 3;
-			this->tabPage12->Text = L"Recherche";
-			this->tabPage12->UseVisualStyleBackColor = true;
+			this->txtClientAjoutBirthDate->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->txtClientAjoutBirthDate->Location = System::Drawing::Point(376, 53);
+			this->txtClientAjoutBirthDate->Name = L"txtClientAjoutBirthDate";
+			this->txtClientAjoutBirthDate->Size = System::Drawing::Size(180, 33);
+			this->txtClientAjoutBirthDate->TabIndex = 5;
 			// 
-			// label2
+			// txtClientAjoutPrénom
 			// 
-			this->label2->AutoSize = true;
-			this->label2->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Franklin Gothic Heavy", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(3, 0);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(567, 41);
-			this->label2->TabIndex = 2;
-			this->label2->Text = L"Client";
-			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			this->txtClientAjoutPrénom->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->txtClientAjoutPrénom->Location = System::Drawing::Point(190, 53);
+			this->txtClientAjoutPrénom->Name = L"txtClientAjoutPrénom";
+			this->txtClientAjoutPrénom->Size = System::Drawing::Size(180, 33);
+			this->txtClientAjoutPrénom->TabIndex = 6;
 			// 
-			// tableLayoutPanel5
+			// tableLayoutPanel7
 			// 
-			this->tableLayoutPanel5->ColumnCount = 1;
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				100)));
-			this->tableLayoutPanel5->Controls->Add(this->tabControl4, 0, 1);
-			this->tableLayoutPanel5->Controls->Add(this->label3, 0, 0);
-			this->tableLayoutPanel5->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->tableLayoutPanel5->Location = System::Drawing::Point(3, 3);
-			this->tableLayoutPanel5->Name = L"tableLayoutPanel5";
-			this->tableLayoutPanel5->RowCount = 2;
-			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 5)));
-			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 95)));
-			this->tableLayoutPanel5->Size = System::Drawing::Size(573, 832);
-			this->tableLayoutPanel5->TabIndex = 4;
-			// 
-			// tabControl4
-			// 
-			this->tabControl4->Controls->Add(this->tabPage13);
-			this->tabControl4->Controls->Add(this->tabPage14);
-			this->tabControl4->Controls->Add(this->tabPage15);
-			this->tabControl4->Controls->Add(this->tabPage16);
-			this->tabControl4->Location = System::Drawing::Point(3, 44);
-			this->tabControl4->Name = L"tabControl4";
-			this->tabControl4->SelectedIndex = 0;
-			this->tabControl4->Size = System::Drawing::Size(567, 785);
-			this->tabControl4->TabIndex = 1;
-			// 
-			// tabPage13
-			// 
-			this->tabPage13->Location = System::Drawing::Point(4, 34);
-			this->tabPage13->Name = L"tabPage13";
-			this->tabPage13->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage13->Size = System::Drawing::Size(559, 747);
-			this->tabPage13->TabIndex = 0;
-			this->tabPage13->Text = L"Ajout";
-			this->tabPage13->UseVisualStyleBackColor = true;
-			// 
-			// tabPage14
-			// 
-			this->tabPage14->Location = System::Drawing::Point(4, 34);
-			this->tabPage14->Name = L"tabPage14";
-			this->tabPage14->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage14->Size = System::Drawing::Size(565, 753);
-			this->tabPage14->TabIndex = 1;
-			this->tabPage14->Text = L"Modification";
-			this->tabPage14->UseVisualStyleBackColor = true;
-			// 
-			// tabPage15
-			// 
-			this->tabPage15->Location = System::Drawing::Point(4, 34);
-			this->tabPage15->Name = L"tabPage15";
-			this->tabPage15->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage15->Size = System::Drawing::Size(565, 753);
-			this->tabPage15->TabIndex = 2;
-			this->tabPage15->Text = L"Supprimer";
-			this->tabPage15->UseVisualStyleBackColor = true;
-			// 
-			// tabPage16
-			// 
-			this->tabPage16->Location = System::Drawing::Point(4, 34);
-			this->tabPage16->Name = L"tabPage16";
-			this->tabPage16->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage16->Size = System::Drawing::Size(565, 753);
-			this->tabPage16->TabIndex = 3;
-			this->tabPage16->Text = L"Recherche";
-			this->tabPage16->UseVisualStyleBackColor = true;
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Franklin Gothic Heavy", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(3, 0);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(567, 41);
-			this->label3->TabIndex = 2;
-			this->label3->Text = L"Personnel";
-			// 
-			// tableLayoutPanel6
-			// 
-			this->tableLayoutPanel6->ColumnCount = 1;
-			this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				100)));
-			this->tableLayoutPanel6->Controls->Add(this->tabControl5, 0, 1);
-			this->tableLayoutPanel6->Controls->Add(this->label4, 0, 0);
-			this->tableLayoutPanel6->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->tableLayoutPanel6->Location = System::Drawing::Point(0, 0);
-			this->tableLayoutPanel6->Name = L"tableLayoutPanel6";
-			this->tableLayoutPanel6->RowCount = 2;
-			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 5)));
-			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 95)));
-			this->tableLayoutPanel6->Size = System::Drawing::Size(579, 838);
-			this->tableLayoutPanel6->TabIndex = 4;
-			// 
-			// tabControl5
-			// 
-			this->tabControl5->Controls->Add(this->tabPage17);
-			this->tabControl5->Controls->Add(this->tabPage18);
-			this->tabControl5->Controls->Add(this->tabPage19);
-			this->tabControl5->Controls->Add(this->tabPage20);
-			this->tabControl5->Location = System::Drawing::Point(3, 44);
-			this->tabControl5->Name = L"tabControl5";
-			this->tabControl5->SelectedIndex = 0;
-			this->tabControl5->Size = System::Drawing::Size(573, 791);
-			this->tabControl5->TabIndex = 1;
-			// 
-			// tabPage17
-			// 
-			this->tabPage17->Location = System::Drawing::Point(4, 34);
-			this->tabPage17->Name = L"tabPage17";
-			this->tabPage17->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage17->Size = System::Drawing::Size(565, 753);
-			this->tabPage17->TabIndex = 0;
-			this->tabPage17->Text = L"Ajout";
-			this->tabPage17->UseVisualStyleBackColor = true;
-			// 
-			// tabPage18
-			// 
-			this->tabPage18->Location = System::Drawing::Point(4, 34);
-			this->tabPage18->Name = L"tabPage18";
-			this->tabPage18->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage18->Size = System::Drawing::Size(565, 753);
-			this->tabPage18->TabIndex = 1;
-			this->tabPage18->Text = L"Modification";
-			this->tabPage18->UseVisualStyleBackColor = true;
-			// 
-			// tabPage19
-			// 
-			this->tabPage19->Location = System::Drawing::Point(4, 34);
-			this->tabPage19->Name = L"tabPage19";
-			this->tabPage19->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage19->Size = System::Drawing::Size(565, 753);
-			this->tabPage19->TabIndex = 2;
-			this->tabPage19->Text = L"Supprimer";
-			this->tabPage19->UseVisualStyleBackColor = true;
-			// 
-			// tabPage20
-			// 
-			this->tabPage20->Location = System::Drawing::Point(4, 34);
-			this->tabPage20->Name = L"tabPage20";
-			this->tabPage20->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage20->Size = System::Drawing::Size(565, 753);
-			this->tabPage20->TabIndex = 3;
-			this->tabPage20->Text = L"Recherche";
-			this->tabPage20->UseVisualStyleBackColor = true;
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Franklin Gothic Heavy", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(3, 0);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(573, 41);
-			this->label4->TabIndex = 2;
-			this->label4->Text = L"Commande";
+			this->tableLayoutPanel7->ColumnCount = 2;
+			this->tableLayoutPanel7->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				50)));
+			this->tableLayoutPanel7->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				50)));
+			this->tableLayoutPanel7->Location = System::Drawing::Point(74, 370);
+			this->tableLayoutPanel7->Name = L"tableLayoutPanel7";
+			this->tableLayoutPanel7->RowCount = 2;
+			this->tableLayoutPanel7->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
+			this->tableLayoutPanel7->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
+			this->tableLayoutPanel7->Size = System::Drawing::Size(200, 100);
+			this->tableLayoutPanel7->TabIndex = 4;
 			// 
 			// MyForm
 			// 
@@ -957,32 +1125,36 @@ namespace Project1 {
 			this->Buttons->ResumeLayout(false);
 			this->TabMod->ResumeLayout(false);
 			this->tabClient->ResumeLayout(false);
+			this->tableLayoutPanel4->ResumeLayout(false);
+			this->tableLayoutPanel4->PerformLayout();
+			this->ClientControl->ResumeLayout(false);
+			this->ClientAjout->ResumeLayout(false);
 			this->tabEmployé->ResumeLayout(false);
+			this->tableLayoutPanel5->ResumeLayout(false);
+			this->tableLayoutPanel5->PerformLayout();
+			this->PersonnelControl->ResumeLayout(false);
 			this->tabCommande->ResumeLayout(false);
+			this->tableLayoutPanel6->ResumeLayout(false);
+			this->tableLayoutPanel6->PerformLayout();
+			this->CommandControl->ResumeLayout(false);
 			this->tabStocks->ResumeLayout(false);
 			this->tableLayoutPanel3->ResumeLayout(false);
 			this->tableLayoutPanel3->PerformLayout();
-			this->tabControl2->ResumeLayout(false);
+			this->StockControl->ResumeLayout(false);
 			this->tabStats->ResumeLayout(false);
 			this->tableLayoutPanel2->ResumeLayout(false);
 			this->tableLayoutPanel2->PerformLayout();
-			this->tabControl1->ResumeLayout(false);
+			this->StatControl->ResumeLayout(false);
 			this->tableLayoutPanel1->ResumeLayout(false);
 			this->tableLayoutPanel1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
-			this->tableLayoutPanel4->ResumeLayout(false);
-			this->tableLayoutPanel4->PerformLayout();
-			this->tabControl3->ResumeLayout(false);
-			this->tableLayoutPanel5->ResumeLayout(false);
-			this->tableLayoutPanel5->PerformLayout();
-			this->tabControl4->ResumeLayout(false);
-			this->tableLayoutPanel6->ResumeLayout(false);
-			this->tableLayoutPanel6->PerformLayout();
-			this->tabControl5->ResumeLayout(false);
+			this->AJoutClientTab->ResumeLayout(false);
+			this->AJoutClientTab->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
+	//Permet de faire disparaître les bouton tab des différents modes
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 		this->TabMod->SizeMode = TabSizeMode::Fixed;
 		this->TabMod->ItemSize = System::Drawing::Size(0, 1);
