@@ -1542,17 +1542,18 @@ private: System::Windows::Forms::Label^ label19;
 				50)));
 			this->tableLayoutPanel22->Controls->Add(this->EmployéBirthDate, 0, 1);
 			this->tableLayoutPanel22->Controls->Add(this->label12, 0, 0);
+			this->tableLayoutPanel22->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tableLayoutPanel22->Location = System::Drawing::Point(3, 193);
 			this->tableLayoutPanel22->Name = L"tableLayoutPanel22";
 			this->tableLayoutPanel22->RowCount = 2;
 			this->tableLayoutPanel22->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
 			this->tableLayoutPanel22->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
-			this->tableLayoutPanel22->Size = System::Drawing::Size(443, 89);
+			this->tableLayoutPanel22->Size = System::Drawing::Size(449, 90);
 			this->tableLayoutPanel22->TabIndex = 8;
 			// 
 			// EmployéBirthDate
 			// 
-			this->EmployéBirthDate->Location = System::Drawing::Point(3, 47);
+			this->EmployéBirthDate->Location = System::Drawing::Point(3, 48);
 			this->EmployéBirthDate->Name = L"EmployéBirthDate";
 			this->EmployéBirthDate->Size = System::Drawing::Size(277, 33);
 			this->EmployéBirthDate->TabIndex = 5;
@@ -1563,7 +1564,7 @@ private: System::Windows::Forms::Label^ label19;
 			this->label12->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->label12->Location = System::Drawing::Point(3, 0);
 			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(437, 44);
+			this->label12->Size = System::Drawing::Size(443, 45);
 			this->label12->TabIndex = 6;
 			this->label12->Text = L"Date De Naissance";
 			this->label12->TextAlign = System::Drawing::ContentAlignment::BottomLeft;
@@ -1750,12 +1751,13 @@ private: System::Windows::Forms::Label^ label19;
 				50)));
 			this->tableLayoutPanel29->Controls->Add(this->EmployéAdressNumber, 0, 1);
 			this->tableLayoutPanel29->Controls->Add(this->label17, 0, 0);
+			this->tableLayoutPanel29->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->tableLayoutPanel29->Location = System::Drawing::Point(3, 3);
 			this->tableLayoutPanel29->Name = L"tableLayoutPanel29";
 			this->tableLayoutPanel29->RowCount = 2;
 			this->tableLayoutPanel29->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
 			this->tableLayoutPanel29->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
-			this->tableLayoutPanel29->Size = System::Drawing::Size(437, 64);
+			this->tableLayoutPanel29->Size = System::Drawing::Size(443, 64);
 			this->tableLayoutPanel29->TabIndex = 9;
 			// 
 			// EmployéAdressNumber
@@ -1771,7 +1773,7 @@ private: System::Windows::Forms::Label^ label19;
 			this->label17->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->label17->Location = System::Drawing::Point(3, 0);
 			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(431, 32);
+			this->label17->Size = System::Drawing::Size(437, 32);
 			this->label17->TabIndex = 6;
 			this->label17->Text = L"Numéro de Maison";
 			this->label17->TextAlign = System::Drawing::ContentAlignment::BottomLeft;
