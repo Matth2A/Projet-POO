@@ -122,12 +122,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Address.cpp" />
+    <ClCompile Include="City.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="DataBase.cpp" />
+    <ClCompile Include="Employee.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Order.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Stats.cpp" />
+    <ClCompile Include="Stock.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Address.h" />
+    <ClInclude Include="City.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="DataBase.h" />
+    <ClInclude Include="Employee.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Order.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="Stats.h" />
+    <ClInclude Include="Stock.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
