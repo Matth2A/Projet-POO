@@ -3,7 +3,7 @@
 
 DataServer::Database::Database(void)
 {
-	this->sCnx = "Data Source = projetpoo.airdns.org, 15638; Initial Catalog = project_test; User ID = MatthisPC; Password = PC86";
+	this->sCnx = "Data Source = 'projetpoo.airdns.org, 15638'; Initial Catalog = project_test; User ID = MatthisPC; Password = PC86";
 
 	this->sSql = "";
 

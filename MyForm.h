@@ -41,9 +41,9 @@ namespace Project1 {
 		}
 
 	protected:
-    private: Client Client;
-    private:Employee Employé;
-
+    private: Client^ bClient;
+    private:Employee^ bEmployé;
+    private: Client^ DB_Client;
 
 
 
@@ -2211,7 +2211,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView1;
             this->ClientSize = System::Drawing::Size(1178, 944);
             this->Controls->Add(this->tableInterface);
             this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-            this->MinimumSize = System::Drawing::Size(1200, 1000);
+            this->MinimumSize = System::Drawing::Size(1000, 1000);
             this->Name = L"MyForm";
             this->Text = L"DataBase Manager";
             this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
@@ -2306,13 +2306,17 @@ private: System::Windows::Forms::DataGridView^ dataGridView1;
 	//Changement de tab grace au boutons
 	private: System::Void ClientB_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->TabMod->SelectedTab = tabClient;
+
+        DB_Client = gcnew Client();
+
         this->ClientData->Refresh();
-        this->ClientData->DataSource = this->Client.Returninfos();
+        this->ClientData->DataSource = this->DB_Client->Returninfos();
+        this->ClientData->DataMember = "Client";
 	}
 	private: System::Void EmplyéB_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->TabMod->SelectedTab = tabEmployé;
         this->EmployeData->Refresh();
-        this->EmployeData->DataSource = this->Employé.Returninfos();
+        this->EmployeData->DataSource = this->bEmployé->Returninfos();
 	}
 	private: System::Void CommandeB_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->TabMod->SelectedTab = tabCommande;
@@ -2324,7 +2328,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView1;
 		this->TabMod->SelectedTab = tabStats;
 	}
 private: System::Void ClientRecherche_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->ClientData->DataSource = this->Client.Returninfos();
+    this->ClientData->DataSource = this->bClient->Returninfos();
 
 }
 };
