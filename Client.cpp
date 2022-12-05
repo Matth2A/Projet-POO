@@ -21,9 +21,9 @@ System::String^ Client::Returninfos()
 
 }
 
-System::String^ Client::create(System::String^ Fname, System::String^ Lname, System::String^ Birth, int ID_ADR)
+System::String^ Client::create(System::String^ Fname, System::String^ Lname, System::String^ Birth, int number, System::String^ city, System::String^ street, System::String^ info, System::String^ postcode)
 {
-	return "insert into person (first_name, last_name, birth_date, id_adr) values('" + Fname + "', '" + Lname + "', '" + Birth + "', '" + ID_ADR + "');	insert into clients(id_p) values(scope_identity())";
+	return "INSERT INTO address VALUES('"+number+"','"+street+"', '"+info+"', (SELECT id_city FROM cities WHERE name LIKE '"+city+"' AND postcode LIKE '"+postcode+"')); INSERT INTO dbo.person VALUES('"+Fname+"', '"+Lname+"', '"+Birth+"', SCOPE_IDENTITY()); INSERT INTO dbo.clients VALUES(SCOPE_IDENTITY(), 1);";
 }
 
 System::String^ Client::Delete(int id)
@@ -31,7 +31,7 @@ System::String^ Client::Delete(int id)
 	return "UPDATE [dbo].[clients] set available = 0 WHERE id_p=" + id + ";";
 }
 
-System::String^ Client::Modify(System::String^ Fname, System::String^ Lname, System::String^ Birth, int ID_ADR)
+System::String^ Client::Modify(System::String^ Fname, System::String^ Lname, System::String^ Birth, int number, System::String^ city, System::String^ street, System::String^ info, System::String^ postcode)
 {
-	return "UPDATE [dbo].[clients] set first_name = '" + Fname + "', last_name = '" + Lname + "', birth_date = '" + Birth + "', id_adr = '" + ID_ADR + "'";
+	return "UPDATE [dbo].[clients] set first_name = '" + Fname + "', last_name = '" + Lname + "', birth_date = '" + Birth + "', number='" + number + "', street = '" + street + "', additional_info = '" + info + "', name = " + city + ", postcode='" + postcode + "';";
 }

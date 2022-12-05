@@ -11,6 +11,7 @@ Employee::Employee(int ID_E)
 
 System::String^ Employee::Find(System::String^ Fname, System::String^ Lname, System::String^ Birth)
 {
+	return" ";
 }
 
 System::String^ Employee::Returninfos()
@@ -20,12 +21,15 @@ System::String^ Employee::Returninfos()
 
 System::String^ Employee::create(System::String^ Fname, System::String^ Lname, System::String^ Birth, int ID_ADR, int ID_superior)
 {
+	return" ";
 }
 
 System::String^ Employee::Delete()
 {
+	return" ";
 }
 
 System::String^ Employee::Modify(System::String^ Fname, System::String^ Lname, System::String^ Birth, int ID_ADR, int ID_superior)
 {
+	return" ";
 }

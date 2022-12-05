@@ -3,7 +3,7 @@
 #include "Stock.h"
 #include "Employee.h"
 #include "Order.h"
-#include "Stats.h"x
+#include "Stats.h"
 
 namespace Project1 {
 
@@ -2307,6 +2307,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView1;
 		this->TabMod->SelectedTab = tabClient;
         this->ClientData->Refresh();
         this->ClientData->DataSource = this->Client.Returninfos();
+        this->ClientData->DataMember = 'Client';
 	}
 	private: System::Void EmplyéB_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->TabMod->SelectedTab = tabEmployé;

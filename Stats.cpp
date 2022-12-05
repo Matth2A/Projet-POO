@@ -2,7 +2,7 @@
 
 System::String^ Stats::VariationsValeur(float a, float b, float c, float d)
 {
-	return System::String^;
+	return" ";
 }
 
 float Stats::TVA(int)
@@ -42,12 +42,12 @@ float Stats::PannierM()
 
 System::String^ Stats::dixplusVend()
 {
-	return System::String^;
+	return" ";
 }
 
 System::String^ Stats::dixmoinsVend()
 {
-	return System::String^;
+	return" ";
 }
 
 float Stats::ValeurStock()
@@ -62,5 +62,5 @@ float Stats::ValeurStockVente()
 
 System::String^ Stats::ProduitReapprovisionner()
 {
-	return System::String^;
+	return" ";
 }

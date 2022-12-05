@@ -5,10 +5,10 @@ ref class Stats : public Person
 private:
 	System::String^ client;
 	System::String^ mois;
-	int TVA;
-	int MargeCommerciale;
-	int RemiseCommerciale;
-	int DemarqueInconnue;
+	int TVAV;
+	int MargeCommercialeV;
+	int RemiseCommercialeV;
+	int DemarqueInconnueV;
 public:
 	System::String^ VariationsValeur(float a, float b, float c, float d);
 	float TVA(int);

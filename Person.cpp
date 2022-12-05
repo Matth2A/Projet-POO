@@ -15,10 +15,6 @@ void Person::setID_ADR(int ida)
     this->ID_ADR = ida;
 }
 
-void Person::setID_ADR(int ida)
-{
-    this->ID_ADR = ida;
-}
 
 void Person::setFname(System::String^ fname)
 {
@@ -27,7 +23,7 @@ void Person::setFname(System::String^ fname)
 
 void Person::setLname(System::String^ lname)
 {
-    this->Lname = lname
+    this->Lname = lname;
 }
 
 void Person::setBirth(System::String^ birth)
@@ -37,24 +33,25 @@ void Person::setBirth(System::String^ birth)
 
 System::String^ Person::Find(System::String^ Fname, System::String^ Lname, System::String^ Birth)
 {
+    return" ";
 }
 
 System::String^ Person::Returninfos()
 {
-
+    return" ";
 }
 
 System::String^ Person::create(System::String^ Fname, System::String^ Lname, System::String^ Birth, int ID_ADR)
 {
-
+    return" ";
 }
 
 System::String^ Person::Delete()
 {
-
+    return" ";
 }
 
 System::String^ Person::Modify(System::String^ Fname, System::String^ Lname, System::String^ Birth, int ID_ADR)
 {
-
+    return" ";
 }
