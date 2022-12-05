@@ -1855,6 +1855,7 @@ private: System::Windows::Forms::DataGridView^ dataGridView1;
             this->ClientTime->Name = L"ClientTime";
             this->ClientTime->Size = System::Drawing::Size(388, 33);
             this->ClientTime->TabIndex = 7;
+            this->ClientTime->Value = System::DateTime(2022, 12, 5, 17, 37, 37, 0);
             // 
             // tableLayoutPanel9
             // 
@@ -2307,7 +2308,6 @@ private: System::Windows::Forms::DataGridView^ dataGridView1;
 		this->TabMod->SelectedTab = tabClient;
         this->ClientData->Refresh();
         this->ClientData->DataSource = this->Client.Returninfos();
-        this->ClientData->DataMember = 'Client';
 	}
 	private: System::Void EmplyéB_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->TabMod->SelectedTab = tabEmployé;
@@ -2324,7 +2324,8 @@ private: System::Windows::Forms::DataGridView^ dataGridView1;
 		this->TabMod->SelectedTab = tabStats;
 	}
 private: System::Void ClientRecherche_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->ClientData->DataSource = this->Client.Find(this->ClientFirstName->Text, this->ClientLastName->Text, this->ClientTime->Text);
+    this->ClientData->DataSource = this->Client.Returninfos();
+
 }
 };
 }

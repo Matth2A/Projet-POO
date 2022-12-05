@@ -15,9 +15,9 @@ System::String^ Order::Find()
 	return" ";
 }
 
-System::String^ Order::Returninfos()
+System::Data::DataSet^ Order::Returninfos()
 {
-	return" ";
+	return this->db.getRows("","");
 }
 
 System::String^ Order::create()

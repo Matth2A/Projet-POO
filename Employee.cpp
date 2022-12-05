@@ -14,9 +14,9 @@ System::String^ Employee::Find(System::String^ Fname, System::String^ Lname, Sys
 	return" ";
 }
 
-System::String^ Employee::Returninfos()
+System::Data::DataSet^ Employee::Returninfos()
 {
-	return "SELECT person.[id_p], person.[first_name], person.[last_name], person.birth_date, employees.hire_date, address.number, address.street, cities.name, cities.postcode FROM[dbo].[employees] JOIN[dbo].[person] ON employees.id_p = person.id_p JOIN[dbo].[address] ON person.id_adr = address.id_adr JOIN[dbo].[cities] ON address.id_city = cities.id_city WHERE available = 1;";
+	return this->db.getRows("SELECT person.[id_p], person.[first_name], person.[last_name], person.birth_date, employees.hire_date, address.number, address.street, cities.name, cities.postcode FROM[dbo].[employees] JOIN[dbo].[person] ON employees.id_p = person.id_p JOIN[dbo].[address] ON person.id_adr = address.id_adr JOIN[dbo].[cities] ON address.id_city = cities.id_city WHERE available = 1;","person");
 }
 
 System::String^ Employee::create(System::String^ Fname, System::String^ Lname, System::String^ Birth, int ID_ADR, int ID_superior)

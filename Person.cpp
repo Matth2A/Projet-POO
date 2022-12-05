@@ -36,9 +36,9 @@ System::String^ Person::Find(System::String^ Fname, System::String^ Lname, Syste
     return" ";
 }
 
-System::String^ Person::Returninfos()
+System::Data::DataSet^ Person::Returninfos()
 {
-    return" ";
+    return db.getRows("","");
 }
 
 System::String^ Person::create(System::String^ Fname, System::String^ Lname, System::String^ Birth, int ID_ADR)

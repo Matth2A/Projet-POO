@@ -10,7 +10,7 @@ City::City(int ID_C)
 	throw gcnew System::NotImplementedException();
 }
 
-System::String^ City::Returninfos()
+System::Data::DataSet^ City::Returninfos()
 {
 	throw gcnew System::NotImplementedException();
 	// TODO: insérer une instruction return ici

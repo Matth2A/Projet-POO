@@ -10,7 +10,7 @@ Address::Address()
 	throw gcnew System::NotImplementedException();
 }
 
-System::String^ Address::Returninfos()
+System::Data::DataSet^ Address::Returninfos()
 {
 	throw gcnew System::NotImplementedException();
 	// TODO: insérer une instruction return ici

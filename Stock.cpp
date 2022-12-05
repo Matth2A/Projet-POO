@@ -10,9 +10,9 @@ Stock::Stock(int ID_item)
 	this->ID_item = ID_item;
 }
 
-System::String^ Stock::Returninfos()
+System::Data::DataSet^ Stock::Returninfos()
 {
-	return" ";
+	return db.getRows(" ","");
 }
 
 System::String^ Stock::create(System::String^ reference, System::String^ name, float available_quantity, float restock_threshold, float taxless_price, float tax)
