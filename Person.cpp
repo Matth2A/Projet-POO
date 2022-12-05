@@ -1,23 +1,38 @@
 #include "Person.h"
 
-void Person::setID_P()
-{
-
-}
-
-void Person::setID_ADR(int a)
-{
-    this->ID_ADR = a;
-}
-
 Person::Person()
 {
 
 }
 
-Person::Person(int ID_P)
+void Person::setID_P(int idp)
 {
-    this->ID_P = ID_P;
+    this->ID_P = idp;
+}
+
+void Person::setID_ADR(int ida)
+{
+    this->ID_ADR = ida;
+}
+
+void Person::setID_ADR(int ida)
+{
+    this->ID_ADR = ida;
+}
+
+void Person::setFname(System::String^ fname)
+{
+    this->Fname = fname;
+}
+
+void Person::setLname(System::String^ lname)
+{
+    this->Lname = lname
+}
+
+void Person::setBirth(System::String^ birth)
+{
+    this->Birth = birth;
 }
 
 System::String^ Person::Find(System::String^ Fname, System::String^ Lname, System::String^ Birth)

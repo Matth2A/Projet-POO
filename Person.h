@@ -9,10 +9,13 @@ private:
 	System::String^ Lname;
 	System::String^ Birth;
 public:
-	void setID_P();
-	void setID_ADR(int a);
 	Person();
-	Person(int ID_P);
+	void setID_P(int IDP);
+	void setID_ADR(int IDA);
+	void setFname(System::String^);
+	void setLname(System::String^);
+	void setBirth(System::String^);
+
 	virtual System::String^ Find(System::String^ Fname, System::String^ Lname, System::String^ Birth);
 	virtual System::String^ Returninfos();
 	virtual System::String^ create(System::String^ Fname, System::String^ Lname, System::String^ Birth, int ID_ADR);
