@@ -416,10 +416,10 @@ private: System::Windows::Forms::Label^ label35;
 
 
 
-private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel63;
-private: System::Windows::Forms::TextBox^ Stat_add_info;
 
-private: System::Windows::Forms::Label^ label41;
+
+
+
 
 private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel57;
 private: System::Windows::Forms::Label^ label36;
@@ -717,9 +717,6 @@ private: System::Windows::Forms::DataGridView^ CommandData;
             this->Stat_Remise_Commerciale = (gcnew System::Windows::Forms::TextBox());
             this->label38 = (gcnew System::Windows::Forms::Label());
             this->label1 = (gcnew System::Windows::Forms::Label());
-            this->tableLayoutPanel63 = (gcnew System::Windows::Forms::TableLayoutPanel());
-            this->Stat_add_info = (gcnew System::Windows::Forms::TextBox());
-            this->label41 = (gcnew System::Windows::Forms::Label());
             this->tableLayoutPanel53 = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->tableLayoutPanel54 = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->Stat_Month = (gcnew System::Windows::Forms::TextBox());
@@ -829,7 +826,6 @@ private: System::Windows::Forms::DataGridView^ CommandData;
             this->tableLayoutPanel3->SuspendLayout();
             this->tableLayoutPanel60->SuspendLayout();
             this->tableLayoutPanel61->SuspendLayout();
-            this->tableLayoutPanel63->SuspendLayout();
             this->tableLayoutPanel53->SuspendLayout();
             this->tableLayoutPanel54->SuspendLayout();
             this->tableLayoutPanel55->SuspendLayout();
@@ -2338,22 +2334,20 @@ private: System::Windows::Forms::DataGridView^ CommandData;
             this->tableLayoutPanel3->ColumnCount = 1;
             this->tableLayoutPanel3->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
                 100)));
-            this->tableLayoutPanel3->Controls->Add(this->tableLayoutPanel60, 0, 3);
-            this->tableLayoutPanel3->Controls->Add(this->tableLayoutPanel61, 0, 3);
+            this->tableLayoutPanel3->Controls->Add(this->tableLayoutPanel60, 0, 2);
+            this->tableLayoutPanel3->Controls->Add(this->tableLayoutPanel61, 0, 2);
             this->tableLayoutPanel3->Controls->Add(this->label1, 0, 0);
-            this->tableLayoutPanel3->Controls->Add(this->tableLayoutPanel63, 0, 2);
             this->tableLayoutPanel3->Controls->Add(this->tableLayoutPanel53, 0, 1);
             this->tableLayoutPanel3->Dock = System::Windows::Forms::DockStyle::Fill;
             this->tableLayoutPanel3->Location = System::Drawing::Point(0, 0);
             this->tableLayoutPanel3->Margin = System::Windows::Forms::Padding(0);
             this->tableLayoutPanel3->Name = L"tableLayoutPanel3";
-            this->tableLayoutPanel3->RowCount = 6;
-            this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 5.434783F)));
-            this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 30.97826F)));
-            this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 10.32609F)));
-            this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 10.32609F)));
-            this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 10.32609F)));
-            this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 32.6087F)));
+            this->tableLayoutPanel3->RowCount = 5;
+            this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 6.060606F)));
+            this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 34.54545F)));
+            this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 11.51515F)));
+            this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 11.51515F)));
+            this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 36.36364F)));
             this->tableLayoutPanel3->Size = System::Drawing::Size(861, 915);
             this->tableLayoutPanel3->TabIndex = 6;
             // 
@@ -2445,45 +2439,6 @@ private: System::Windows::Forms::DataGridView^ CommandData;
             this->label1->TabIndex = 2;
             this->label1->Text = L"Statistique";
             this->label1->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
-            // 
-            // tableLayoutPanel63
-            // 
-            this->tableLayoutPanel63->ColumnCount = 1;
-            this->tableLayoutPanel63->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-                50)));
-            this->tableLayoutPanel63->Controls->Add(this->Stat_add_info, 0, 1);
-            this->tableLayoutPanel63->Controls->Add(this->label41, 0, 0);
-            this->tableLayoutPanel63->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->tableLayoutPanel63->Location = System::Drawing::Point(3, 334);
-            this->tableLayoutPanel63->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-            this->tableLayoutPanel63->Name = L"tableLayoutPanel63";
-            this->tableLayoutPanel63->RowCount = 2;
-            this->tableLayoutPanel63->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
-            this->tableLayoutPanel63->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
-            this->tableLayoutPanel63->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute,
-                20)));
-            this->tableLayoutPanel63->Size = System::Drawing::Size(855, 90);
-            this->tableLayoutPanel63->TabIndex = 12;
-            // 
-            // Stat_add_info
-            // 
-            this->Stat_add_info->Font = (gcnew System::Drawing::Font(L"Copperplate Gothic Light", 9));
-            this->Stat_add_info->Location = System::Drawing::Point(3, 47);
-            this->Stat_add_info->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-            this->Stat_add_info->Name = L"Stat_add_info";
-            this->Stat_add_info->Size = System::Drawing::Size(443, 27);
-            this->Stat_add_info->TabIndex = 5;
-            // 
-            // label41
-            // 
-            this->label41->AutoSize = true;
-            this->label41->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->label41->Location = System::Drawing::Point(3, 0);
-            this->label41->Name = L"label41";
-            this->label41->Size = System::Drawing::Size(849, 45);
-            this->label41->TabIndex = 6;
-            this->label41->Text = L"Information complémentaire";
-            this->label41->TextAlign = System::Drawing::ContentAlignment::BottomLeft;
             // 
             // tableLayoutPanel53
             // 
@@ -3394,8 +3349,6 @@ private: System::Windows::Forms::DataGridView^ CommandData;
             this->tableLayoutPanel60->PerformLayout();
             this->tableLayoutPanel61->ResumeLayout(false);
             this->tableLayoutPanel61->PerformLayout();
-            this->tableLayoutPanel63->ResumeLayout(false);
-            this->tableLayoutPanel63->PerformLayout();
             this->tableLayoutPanel53->ResumeLayout(false);
             this->tableLayoutPanel54->ResumeLayout(false);
             this->tableLayoutPanel54->PerformLayout();
