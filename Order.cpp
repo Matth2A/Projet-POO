@@ -23,10 +23,11 @@ System::Data::DataSet^ Order::Returninfos()
 void Order::create(System::String^ expnumber, System::String^ expstreet, System::String^ expinfo, System::String^ expcity, System::String^ exppostcode, System::String^ billnumber, System::String^ billstreet, System::String^ billinfo, System::String^ billcity, System::String^ billpostcode, System::String^ issue_date, System::String^ delivery_date, int discount, int id_c)
 {
 	Address^ adr = gcnew Address;
+	float dis = (float)discount;
 	int exp_adr_id; int bill_adr_id;
 	exp_adr_id = adr->create(expnumber, expstreet, expinfo, expcity, exppostcode);
 	bill_adr_id = adr->create(billnumber, billstreet, billinfo, billcity, billpostcode);
-	db.actionRows("INSERT INTO dbo.orders VALUES('" + issue_date + "','" + delivery_date + "'," + discount + "," + id_c + ","+exp_adr_id+","+bill_adr_id+");");
+	db.actionRows("INSERT INTO dbo.orders VALUES('" + issue_date + "','" + delivery_date + "'," + dis + ",'" + id_c + "',"+exp_adr_id+","+bill_adr_id+");");
 }
 
 System::String^ Order::Delete()
