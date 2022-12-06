@@ -1,0 +1,29 @@
+﻿  MyForm.cpp
+C:\Users\Leo\Downloads\Projet-POO-Interface\Address.h(15,25): warning C4490: 'override': incorrect use of override specifier; 'Address::Returninfos' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Address.h(15,25): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Address.h(16,6): warning C4490: 'override': incorrect use of override specifier; 'Address::create' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Address.h(16,6): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Address.h(17,18): warning C4490: 'override': incorrect use of override specifier; 'Address::Delete' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Address.h(17,18): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Address.h(18,18): warning C4490: 'override': incorrect use of override specifier; 'Address::Modify' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Address.h(18,18): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Client.h(18,15): warning C4490: 'override': incorrect use of override specifier; 'Client::Delete' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Client.h(18,15): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Client.h(19,26): warning C4490: 'override': incorrect use of override specifier; 'Client::Modify' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Client.h(19,26): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Stock.h(21,18): warning C4490: 'override': incorrect use of override specifier; 'Stock::create' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Stock.h(21,18): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Stock.h(23,18): warning C4490: 'override': incorrect use of override specifier; 'Stock::Modify' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Stock.h(23,18): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Employee.h(16,26): warning C4490: 'override': incorrect use of override specifier; 'Employee::create' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Employee.h(16,26): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Employee.h(18,26): warning C4490: 'override': incorrect use of override specifier; 'Employee::Modify' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Employee.h(18,26): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Order.h(17,18): warning C4490: 'override': incorrect use of override specifier; 'Order::Find' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Order.h(17,18): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Order.h(19,18): warning C4490: 'override': incorrect use of override specifier; 'Order::create' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Order.h(19,18): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+C:\Users\Leo\Downloads\Projet-POO-Interface\Order.h(21,18): warning C4490: 'override': incorrect use of override specifier; 'Order::Modify' does not match a base ref class method
+C:\Users\Leo\Downloads\Projet-POO-Interface\Order.h(21,18): message : 'new' or 'override' are only allowed when a matching base method from a ref class exists
+  Address.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Project1.vcxproj -> C:\Users\Leo\Downloads\Projet-POO-Interface\x64\Debug\Project1.exe
