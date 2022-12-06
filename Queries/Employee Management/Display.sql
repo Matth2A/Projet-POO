@@ -3,6 +3,7 @@ SELECT person.[id_p]
       ,person.[last_name]
       ,person.birth_date
       ,employees.hire_date
+      ,employees.id_emp_employees AS id_superior
       ,address.number
       ,address.street
       ,cities.name
