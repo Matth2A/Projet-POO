@@ -3,3 +3,8 @@ C:\Users\Leo\Downloads\Projet-POO-Interface\x64\Debug\Project1.vcxproj.Suggested
 C:\Users\Leo\Downloads\Projet-POO-Interface\x64\Debug\Project1.MyForm.resources
 C:\Users\Leo\Downloads\Projet-POO-Interface\x64\Debug\Project1.vcxproj.GenerateResource.cache
 C:\Users\Leo\Downloads\Projet-POO-Interface\x64\Debug\Project1.exe
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\x64\Debug\Project1.vcxproj.AssemblyReference.cache
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\x64\Debug\Project1.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\x64\Debug\Project1.MyForm.resources
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\x64\Debug\Project1.vcxproj.GenerateResource.cache
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\x64\Debug\Project1.exe
