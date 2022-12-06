@@ -23,6 +23,6 @@ public:
 	virtual System::String^ Find(System::String^ Fname, System::String^ Lname, System::String^ Birth);
 	virtual System::Data::DataSet^ Returninfos();
 	virtual void Person::create(System::String^ Fname, System::String^ Lname, System::String^ Birth, System::String^ number, System::String^ street, System::String^ info, System::String^ city, System::String^ postcode);
-	virtual System::String^ Delete();
+	virtual void Delete();
 	virtual System::String^ Modify(System::String^ Fname, System::String^ Lname, System::String^ Birth, int ID_ADR);
 };

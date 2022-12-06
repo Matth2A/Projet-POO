@@ -6,6 +6,10 @@ Client::Client()
 
 Client::Client(int ID_C)
 {
+	set_ID_C(ID_C);
+}
+
+void Client::set_ID_C(int ID_C) {
 	this->ID_C = ID_C;
 }
 
@@ -27,9 +31,9 @@ void Client::create(System::String^ Fname, System::String^ Lname, System::String
 	od.actionRows("INSERT INTO dbo.clients VALUES(" + this->getID_P() + ", 1);");
 }
 
-void Client::Delete(System::String^ id)
+void Client::Delete()
 {
-	this->od.actionRows("UPDATE [dbo].[clients] set available = 0 WHERE id_p=" + id + ";");
+	this->od.actionRows("UPDATE [dbo].[clients] set available = 0 WHERE id_client=" + this->ID_C + ";");
 }
 
 System::String^ Client::Modify(System::String^ Fname, System::String^ Lname, System::String^ Birth, int number, System::String^ city, System::String^ street, System::String^ info, System::String^ postcode)

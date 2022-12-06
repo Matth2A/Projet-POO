@@ -2,7 +2,7 @@
 #include "Client.h"
 #include "DataBase.h"
 
-ref class Stock : public Client
+ref class Stock
 
 {
 private:

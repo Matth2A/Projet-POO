@@ -8,3 +8,8 @@ C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Proj
 C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\x64\Debug\Project1.MyForm.resources
 C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\x64\Debug\Project1.vcxproj.GenerateResource.cache
 C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\x64\Debug\Project1.exe
+C:\Users\Leo\Documents\A2\Conception et programmation objet\Projet\06-12-2022\Git\x64\Debug\Project1.vcxproj.AssemblyReference.cache
+C:\Users\Leo\Documents\A2\Conception et programmation objet\Projet\06-12-2022\Git\x64\Debug\Project1.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\Leo\Documents\A2\Conception et programmation objet\Projet\06-12-2022\Git\x64\Debug\Project1.MyForm.resources
+C:\Users\Leo\Documents\A2\Conception et programmation objet\Projet\06-12-2022\Git\x64\Debug\Project1.vcxproj.GenerateResource.cache
+C:\Users\Leo\Documents\A2\Conception et programmation objet\Projet\06-12-2022\Git\x64\Debug\Project1.exe

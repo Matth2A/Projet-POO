@@ -56,9 +56,8 @@ void Person::create(System::String^ Fname, System::String^ Lname, System::String
     setID_P(System::Convert::ToInt32(result));
 }
 
-System::String^ Person::Delete()
+void Person::Delete()
 {
-    return" ";
 }
 
 System::String^ Person::Modify(System::String^ Fname, System::String^ Lname, System::String^ Birth, int ID_ADR)

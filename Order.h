@@ -16,7 +16,7 @@ public:
 	Order(int ID_ORDER);
 	System::String^ Find() override;
 	System::Data::DataSet^ Returninfos() override;
-	System::String^ create()override;
+	void create(System::String^ expnumber, System::String^ expstreet, System::String^ expinfo, System::String^ expcity, System::String^ exppostcode, System::String^ billnumber, System::String^ billstreet, System::String^ billinfo, System::String^ billcity, System::String^ billpostcode, System::String^ issue_date, System::String^ delivery_date, int discount, int id_c)override;
 	System::String^ Delete() override;
 	System::String^ Modify() override;
 	System::String^ remove_item(int ID_item);
