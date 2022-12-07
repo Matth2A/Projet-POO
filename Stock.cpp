@@ -12,7 +12,7 @@ Stock::Stock(int ID_item)
 
 System::Data::DataSet^ Stock::Returninfos()
 {
-	return db.getRows(" ","");
+	return db.getRows("Select * from items;","items");
 }
 
 System::String^ Stock::create(System::String^ reference, System::String^ name, float available_quantity, float restock_threshold, float taxless_price, float tax)

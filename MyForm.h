@@ -864,6 +864,7 @@ private: System::Windows::Forms::Button^ StatsRéapB;
             this->StatsChiffAffMois = (gcnew System::Windows::Forms::Button());
             this->StatsLessBuyB = (gcnew System::Windows::Forms::Button());
             this->StatsMostBuyB = (gcnew System::Windows::Forms::Button());
+            this->StatsRéapB = (gcnew System::Windows::Forms::Button());
             this->StatsData = (gcnew System::Windows::Forms::DataGridView());
             this->tabClient = (gcnew System::Windows::Forms::TabPage());
             this->tableLayoutPanel33 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -909,7 +910,6 @@ private: System::Windows::Forms::Button^ StatsRéapB;
             this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
             this->MarqueLabel = (gcnew System::Windows::Forms::Label());
-            this->StatsRéapB = (gcnew System::Windows::Forms::Button());
             this->tableInterface->SuspendLayout();
             this->tableFonction->SuspendLayout();
             this->Buttons->SuspendLayout();
@@ -3271,6 +3271,17 @@ private: System::Windows::Forms::Button^ StatsRéapB;
             this->StatsMostBuyB->UseVisualStyleBackColor = true;
             this->StatsMostBuyB->Click += gcnew System::EventHandler(this, &MyForm::StatsMostBuyB_Click);
             // 
+            // StatsRéapB
+            // 
+            this->StatsRéapB->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->StatsRéapB->Location = System::Drawing::Point(3, 585);
+            this->StatsRéapB->Name = L"StatsRéapB";
+            this->StatsRéapB->Size = System::Drawing::Size(849, 94);
+            this->StatsRéapB->TabIndex = 6;
+            this->StatsRéapB->Text = L"Article à réapprovisionner";
+            this->StatsRéapB->UseVisualStyleBackColor = true;
+            this->StatsRéapB->Click += gcnew System::EventHandler(this, &MyForm::StatsRéapB_Click);
+            // 
             // StatsData
             // 
             this->StatsData->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
@@ -3914,17 +3925,6 @@ private: System::Windows::Forms::Button^ StatsRéapB;
             this->MarqueLabel->Text = L"Elèc-tonique.inc";
             this->MarqueLabel->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
             // 
-            // StatsRéapB
-            // 
-            this->StatsRéapB->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->StatsRéapB->Location = System::Drawing::Point(3, 585);
-            this->StatsRéapB->Name = L"StatsRéapB";
-            this->StatsRéapB->Size = System::Drawing::Size(849, 94);
-            this->StatsRéapB->TabIndex = 6;
-            this->StatsRéapB->Text = L"Article à réapprovisionner";
-            this->StatsRéapB->UseVisualStyleBackColor = true;
-            this->StatsRéapB->Click += gcnew System::EventHandler(this, &MyForm::StatsRéapB_Click);
-            // 
             // MyForm
             // 
             this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
@@ -4087,7 +4087,6 @@ private: System::Windows::Forms::Button^ StatsRéapB;
 
         this->ClientData->Refresh();
         this->ClientData->DataSource = this->DB_Client->Returninfos();
-        //this->ClientData->DataMember = "Client";
 	}
 	private: System::Void EmplyéB_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->TabMod->SelectedTab = tabEmployé;
@@ -4103,13 +4102,18 @@ private: System::Windows::Forms::Button^ StatsRéapB;
         this->DB_Client->Delete();
     }
 	private: System::Void CommandeB_Click(System::Object^ sender, System::EventArgs^ e) {
-        DB_Order = gcnew Order();
 		this->TabMod->SelectedTab = tabCommande;
-        this->Data->getRows("Select * from orders;", "orders");
+        DB_Order = gcnew Order();
+
+        this->CommandData->DataSource = DB_Order->Returninfos();
+
 	}
 	private: System::Void StockB_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->TabMod->SelectedTab = tabStocks;
-        this->Data->getRows("Select * from items", "stock");
+
+        Db_Stock = gcnew Stock();
+
+        this->StockData->DataSource = Db_Stock->Returninfos();
 	}
 	private: System::Void StatsB_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->TabMod->SelectedTab = tabStats;

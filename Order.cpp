@@ -17,7 +17,7 @@ System::String^ Order::Find()
 
 System::Data::DataSet^ Order::Returninfos()
 {
-	return this->db.getRows("","");
+	return this->db.getRows("Select * from orders","orders");
 }
 
 void Order::create(System::String^ expnumber, System::String^ expstreet, System::String^ expinfo, System::String^ expcity, System::String^ exppostcode, System::String^ billnumber, System::String^ billstreet, System::String^ billinfo, System::String^ billcity, System::String^ billpostcode, System::String^ issue_date, System::String^ delivery_date, int discount, int id_c)
