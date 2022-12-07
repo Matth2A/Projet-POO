@@ -521,6 +521,9 @@ private: System::Windows::Forms::Button^ StatsClientMontantB;
 
 
 private: System::Windows::Forms::Button^ StatsChiffAffMois;
+private: System::Windows::Forms::Button^ StatsLessBuyB;
+private: System::Windows::Forms::Button^ StatsMostBuyB;
+private: System::Windows::Forms::Button^ StatsRéapB;
 
 
 
@@ -859,6 +862,8 @@ private: System::Windows::Forms::Button^ StatsChiffAffMois;
             this->StatPrixBStock = (gcnew System::Windows::Forms::Button());
             this->StatsClientMontantB = (gcnew System::Windows::Forms::Button());
             this->StatsChiffAffMois = (gcnew System::Windows::Forms::Button());
+            this->StatsLessBuyB = (gcnew System::Windows::Forms::Button());
+            this->StatsMostBuyB = (gcnew System::Windows::Forms::Button());
             this->StatsData = (gcnew System::Windows::Forms::DataGridView());
             this->tabClient = (gcnew System::Windows::Forms::TabPage());
             this->tableLayoutPanel33 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -904,6 +909,7 @@ private: System::Windows::Forms::Button^ StatsChiffAffMois;
             this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
             this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
             this->MarqueLabel = (gcnew System::Windows::Forms::Label());
+            this->StatsRéapB = (gcnew System::Windows::Forms::Button());
             this->tableInterface->SuspendLayout();
             this->tableFonction->SuspendLayout();
             this->Buttons->SuspendLayout();
@@ -3182,14 +3188,20 @@ private: System::Windows::Forms::Button^ StatsChiffAffMois;
             this->tableLayoutPanel55->Controls->Add(this->StatPrixBStock, 0, 1);
             this->tableLayoutPanel55->Controls->Add(this->StatsClientMontantB, 0, 3);
             this->tableLayoutPanel55->Controls->Add(this->StatsChiffAffMois, 0, 2);
+            this->tableLayoutPanel55->Controls->Add(this->StatsLessBuyB, 0, 4);
+            this->tableLayoutPanel55->Controls->Add(this->StatsMostBuyB, 0, 5);
+            this->tableLayoutPanel55->Controls->Add(this->StatsRéapB, 0, 6);
             this->tableLayoutPanel55->Dock = System::Windows::Forms::DockStyle::Fill;
             this->tableLayoutPanel55->Location = System::Drawing::Point(3, 230);
             this->tableLayoutPanel55->Name = L"tableLayoutPanel55";
-            this->tableLayoutPanel55->RowCount = 4;
-            this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 25)));
-            this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 25)));
-            this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 25)));
-            this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 25)));
+            this->tableLayoutPanel55->RowCount = 7;
+            this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 14.28571F)));
+            this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 14.28571F)));
+            this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 14.28571F)));
+            this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 14.28571F)));
+            this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 14.28571F)));
+            this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 14.28571F)));
+            this->tableLayoutPanel55->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 14.28571F)));
             this->tableLayoutPanel55->Size = System::Drawing::Size(855, 682);
             this->tableLayoutPanel55->TabIndex = 10;
             // 
@@ -3198,7 +3210,7 @@ private: System::Windows::Forms::Button^ StatsChiffAffMois;
             this->StockPrixTaxeB->Dock = System::Windows::Forms::DockStyle::Fill;
             this->StockPrixTaxeB->Location = System::Drawing::Point(3, 3);
             this->StockPrixTaxeB->Name = L"StockPrixTaxeB";
-            this->StockPrixTaxeB->Size = System::Drawing::Size(849, 164);
+            this->StockPrixTaxeB->Size = System::Drawing::Size(849, 91);
             this->StockPrixTaxeB->TabIndex = 0;
             this->StockPrixTaxeB->Text = L"Prix du Stock (avec taxes)";
             this->StockPrixTaxeB->UseVisualStyleBackColor = true;
@@ -3207,9 +3219,9 @@ private: System::Windows::Forms::Button^ StatsChiffAffMois;
             // StatPrixBStock
             // 
             this->StatPrixBStock->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->StatPrixBStock->Location = System::Drawing::Point(3, 173);
+            this->StatPrixBStock->Location = System::Drawing::Point(3, 100);
             this->StatPrixBStock->Name = L"StatPrixBStock";
-            this->StatPrixBStock->Size = System::Drawing::Size(849, 164);
+            this->StatPrixBStock->Size = System::Drawing::Size(849, 91);
             this->StatPrixBStock->TabIndex = 1;
             this->StatPrixBStock->Text = L"Prix du Stock (sans taxes)";
             this->StatPrixBStock->UseVisualStyleBackColor = true;
@@ -3218,9 +3230,9 @@ private: System::Windows::Forms::Button^ StatsChiffAffMois;
             // StatsClientMontantB
             // 
             this->StatsClientMontantB->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->StatsClientMontantB->Location = System::Drawing::Point(3, 513);
+            this->StatsClientMontantB->Location = System::Drawing::Point(3, 294);
             this->StatsClientMontantB->Name = L"StatsClientMontantB";
-            this->StatsClientMontantB->Size = System::Drawing::Size(849, 166);
+            this->StatsClientMontantB->Size = System::Drawing::Size(849, 91);
             this->StatsClientMontantB->TabIndex = 2;
             this->StatsClientMontantB->Text = L"Montant d\'achat d\'un client";
             this->StatsClientMontantB->UseVisualStyleBackColor = true;
@@ -3229,13 +3241,35 @@ private: System::Windows::Forms::Button^ StatsChiffAffMois;
             // StatsChiffAffMois
             // 
             this->StatsChiffAffMois->Dock = System::Windows::Forms::DockStyle::Fill;
-            this->StatsChiffAffMois->Location = System::Drawing::Point(3, 343);
+            this->StatsChiffAffMois->Location = System::Drawing::Point(3, 197);
             this->StatsChiffAffMois->Name = L"StatsChiffAffMois";
-            this->StatsChiffAffMois->Size = System::Drawing::Size(849, 164);
+            this->StatsChiffAffMois->Size = System::Drawing::Size(849, 91);
             this->StatsChiffAffMois->TabIndex = 3;
             this->StatsChiffAffMois->Text = L"Chiffre d\'affaire d\'un mois";
             this->StatsChiffAffMois->UseVisualStyleBackColor = true;
             this->StatsChiffAffMois->Click += gcnew System::EventHandler(this, &MyForm::StatsChiffAffMois_Click);
+            // 
+            // StatsLessBuyB
+            // 
+            this->StatsLessBuyB->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->StatsLessBuyB->Location = System::Drawing::Point(3, 391);
+            this->StatsLessBuyB->Name = L"StatsLessBuyB";
+            this->StatsLessBuyB->Size = System::Drawing::Size(849, 91);
+            this->StatsLessBuyB->TabIndex = 4;
+            this->StatsLessBuyB->Text = L"Article le mois commandé";
+            this->StatsLessBuyB->UseVisualStyleBackColor = true;
+            this->StatsLessBuyB->Click += gcnew System::EventHandler(this, &MyForm::StatsLessBuyB_Click);
+            // 
+            // StatsMostBuyB
+            // 
+            this->StatsMostBuyB->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->StatsMostBuyB->Location = System::Drawing::Point(3, 488);
+            this->StatsMostBuyB->Name = L"StatsMostBuyB";
+            this->StatsMostBuyB->Size = System::Drawing::Size(849, 91);
+            this->StatsMostBuyB->TabIndex = 5;
+            this->StatsMostBuyB->Text = L"Article le plus commandé";
+            this->StatsMostBuyB->UseVisualStyleBackColor = true;
+            this->StatsMostBuyB->Click += gcnew System::EventHandler(this, &MyForm::StatsMostBuyB_Click);
             // 
             // StatsData
             // 
@@ -3880,6 +3914,17 @@ private: System::Windows::Forms::Button^ StatsChiffAffMois;
             this->MarqueLabel->Text = L"Elèc-tonique.inc";
             this->MarqueLabel->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
             // 
+            // StatsRéapB
+            // 
+            this->StatsRéapB->Dock = System::Windows::Forms::DockStyle::Fill;
+            this->StatsRéapB->Location = System::Drawing::Point(3, 585);
+            this->StatsRéapB->Name = L"StatsRéapB";
+            this->StatsRéapB->Size = System::Drawing::Size(849, 94);
+            this->StatsRéapB->TabIndex = 6;
+            this->StatsRéapB->Text = L"Article à réapprovisionner";
+            this->StatsRéapB->UseVisualStyleBackColor = true;
+            this->StatsRéapB->Click += gcnew System::EventHandler(this, &MyForm::StatsRéapB_Click);
+            // 
             // MyForm
             // 
             this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
@@ -4060,6 +4105,7 @@ private: System::Windows::Forms::Button^ StatsChiffAffMois;
 	private: System::Void CommandeB_Click(System::Object^ sender, System::EventArgs^ e) {
         DB_Order = gcnew Order();
 		this->TabMod->SelectedTab = tabCommande;
+        this->Data->getRows("Select * from orders;", "orders");
 	}
 	private: System::Void StockB_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->TabMod->SelectedTab = tabStocks;
@@ -4118,6 +4164,15 @@ private: System::Void StatsChiffAffMois_Click(System::Object^ sender, System::Ev
 }
 private: System::Void StatsClientMontantB_Click(System::Object^ sender, System::EventArgs^ e) {
     this->StatsData->DataSource = this->Data->getRows("SELECT SUM((has_item.taxless_price * has_item.quantity * (1 + (tax / 100)) * (1 - (discount / 100)))) FROM[dbo].[orders] JOIN[dbo].[has_item] ON orders.id_order = has_item.id_order WHERE orders.id_client = 1;","orders");
+}
+private: System::Void StatsLessBuyB_Click(System::Object^ sender, System::EventArgs^ e) {
+    this->StatsData->DataSource = this->Data->getRows("SELECT TOP(10) sales.id_item, sales.quantity_sold, items.reference, items.name FROM(SELECT items.id_item, SUM(has_item.quantity) AS quantity_sold FROM[dbo].[items] JOIN[dbo].[has_item] ON items.id_item = has_item.id_item GROUP BY items.id_item) AS sales JOIN[dbo].[items] ON sales.id_item = items.id_item ORDER BY quantity_sold ASC; ", "items");
+}
+private: System::Void StatsMostBuyB_Click(System::Object^ sender, System::EventArgs^ e) {
+    this->StatsData->DataSource = this->Data->getRows("SELECT TOP(10) sales.id_item, sales.quantity_sold, items.reference, items.name FROM(SELECT    items.id_item, SUM(has_item.quantity) AS quantity_sold FROM[dbo].[items] JOIN[dbo].[has_item] ON items.id_item = has_item.id_item GROUP BY items.id_item) AS sales JOIN[dbo].[items] ON sales.id_item = items.id_item ORDER BY quantity_sold DESC; ","items");
+}
+private: System::Void StatsRéapB_Click(System::Object^ sender, System::EventArgs^ e) {
+    this->StatsData->DataSource = this->Data->getRows("SELECT * FROM [dbo].[items] WHERE restock_threshold>available_quantity;", "items");
 }
 };
 }

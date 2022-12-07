@@ -1,4 +1,15 @@
-﻿  MyForm.cpp
+﻿  Client.cpp
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Address.h(15,25): warning C4490: 'override' : utilisation incorrecte du spécificateur de substitution ; 'Address::Returninfos' ne correspond pas à une méthode de classe ref de base
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Address.h(15,25): message : 'new' ou 'override' sont autorisés uniquement lorsqu'une méthode de base correspondante existe à partir d'une classe ref
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Address.h(16,6): warning C4490: 'override' : utilisation incorrecte du spécificateur de substitution ; 'Address::create' ne correspond pas à une méthode de classe ref de base
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Address.h(16,6): message : 'new' ou 'override' sont autorisés uniquement lorsqu'une méthode de base correspondante existe à partir d'une classe ref
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Address.h(17,18): warning C4490: 'override' : utilisation incorrecte du spécificateur de substitution ; 'Address::Delete' ne correspond pas à une méthode de classe ref de base
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Address.h(17,18): message : 'new' ou 'override' sont autorisés uniquement lorsqu'une méthode de base correspondante existe à partir d'une classe ref
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Address.h(18,18): warning C4490: 'override' : utilisation incorrecte du spécificateur de substitution ; 'Address::Modify' ne correspond pas à une méthode de classe ref de base
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Address.h(18,18): message : 'new' ou 'override' sont autorisés uniquement lorsqu'une méthode de base correspondante existe à partir d'une classe ref
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Client.h(20,26): warning C4490: 'override' : utilisation incorrecte du spécificateur de substitution ; 'Client::Modify' ne correspond pas à une méthode de classe ref de base
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Client.h(20,26): message : 'new' ou 'override' sont autorisés uniquement lorsqu'une méthode de base correspondante existe à partir d'une classe ref
+  MyForm.cpp
 C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Address.h(15,25): warning C4490: 'override' : utilisation incorrecte du spécificateur de substitution ; 'Address::Returninfos' ne correspond pas à une méthode de classe ref de base
 C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Address.h(15,25): message : 'new' ou 'override' sont autorisés uniquement lorsqu'une méthode de base correspondante existe à partir d'une classe ref
 C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Address.h(16,6): warning C4490: 'override' : utilisation incorrecte du spécificateur de substitution ; 'Address::create' ne correspond pas à une méthode de classe ref de base
@@ -28,8 +39,9 @@ C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Proj
 C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Order.h(21,18): warning C4490: 'override' : utilisation incorrecte du spécificateur de substitution ; 'Order::Modify' ne correspond pas à une méthode de classe ref de base
 C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\Order.h(21,18): message : 'new' ou 'override' sont autorisés uniquement lorsqu'une méthode de base correspondante existe à partir d'une classe ref
 C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\MyForm.h(4057,59): warning C4244: 'argument' : conversion de '__int64' en 'int', perte possible de données
-C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\MyForm.h(4085,57): warning C4244: 'argument' : conversion de '__int64' en 'int', perte possible de données
-C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\MyForm.h(4089,452): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
-C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\MyForm.h(4089,397): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\MyForm.h(4086,57): warning C4244: 'argument' : conversion de '__int64' en 'int', perte possible de données
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\MyForm.h(4090,452): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\MyForm.h(4090,397): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+  Génération de code en cours...
   Address.obj : module MSIL détecté ; liens incrémentiels désactivés pour MSIL ; édition de liens complète en cours
   Project1.vcxproj -> C:\Users\matth\OneDrive\Documents\CESI\A2\Conception et programmation objet\Projet\Code\x64\Debug\Project1.exe
